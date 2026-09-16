@@ -58,4 +58,5 @@ Against the conference requirements in `templates/notice_text.txt`:
 | At least 10 references | Done — 29 |
 | References from the last three years | Done — 7 from 2023–2025 |
 | Reference authors from 3+ countries | Done |
-| AI-assistance disclosure | Kept in Acknowledgment |
+| Acknowledgments | Funding statement and reviewer thanks; no AI disclosure |
+| Data availability | Points to the corresponding author; no external URLs |
