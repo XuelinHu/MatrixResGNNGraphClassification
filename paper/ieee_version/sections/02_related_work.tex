@@ -13,12 +13,11 @@ resulting design space~\cite{wu2020comprehensive}.
 
 \textbf{Deep GNNs and residual connectivity.} Depth is not free: over-smoothing
 makes node representations converge as propagation depth
-grows~\cite{li2018deeper,oono2020simple}, while over-squashing compresses
+grows~\cite{li2018deeper}, while over-squashing compresses
 long-range information into fixed-size
 messages~\cite{alon2020bottleneck,topping2021understanding}. DropEdge randomly
-removes edges during training~\cite{rong2019dropedge}, Jumping Knowledge
-aggregates representations across layers~\cite{xu2018representation}, and
-residual or dense skip paths carry earlier states
+removes edges during training~\cite{rong2019dropedge}, and residual or dense
+skip paths carry earlier states
 forward~\cite{he2016deep}. Residual gated graph convolutional
 networks learn how strongly historical states should be
 reinjected~\cite{bresson2017residual}. These approaches reuse depth-wise state

@@ -6,11 +6,15 @@ aggregating information from local neighborhoods~\cite{kipf2017gcn}.
 This message-passing view has become a standard tool for graph classification
 because it combines node attributes, local connectivity, and graph-level
 structure in a single differentiable model~\cite{gilmer2017neural,wu2020comprehensive}.
-Graph classifiers are used well beyond the standard benchmarks, for example to
-identify plant vacuole proteins from contact
-maps~\cite{suiIdentificationPlantVacuole2023} and to propagate functional
+Graph classifiers are used well beyond the standard benchmarks: to identify
+plant vacuole proteins from contact
+maps~\cite{suiIdentificationPlantVacuole2023}, to propagate functional
 annotation through plant knowledge
-graphs~\cite{baongoImprovingPlantFunctional2025}.
+graphs~\cite{baongoImprovingPlantFunctional2025}, and for knowledge graph
+completion, where recent work enriches node representations with
+multi-granularity contextual semantics~\cite{wang2025multigranularity}, global
+and local context~\cite{wang2024conee}, and fused textual
+evidence~\cite{wang2024textenhanced}.
 In such tasks, graph labels may depend on both local motifs and global
 organization, so useful intermediate evidence must survive until graph-level
 pooling~\cite{ying2018hierarchical}.
@@ -18,14 +22,13 @@ pooling~\cite{ying2018hierarchical}.
 Increasing depth or adding parallel branches expands capacity but also changes
 information transport. Deep GNNs may suffer from over-smoothing, where node
 representations become too similar across propagation
-steps~\cite{li2018deeper,oono2020simple}, or from over-squashing, where
+steps~\cite{li2018deeper}, or from over-squashing, where
 long-range information is compressed into limited-size
 messages~\cite{alon2020bottleneck,topping2021understanding}. Both are critical
 for graph-level prediction, because the final readout depends on the
 intermediate representations that reach the pooling stage. Residual
-connections are a common response~\cite{he2016deep,bresson2017residual}, as are
-DropEdge and Jumping Knowledge
-aggregation~\cite{rong2019dropedge,xu2018representation}. Yet residual
+connections are a common response~\cite{he2016deep,bresson2017residual}, as is
+DropEdge~\cite{rong2019dropedge}. Yet residual
 connectivity is usually treated as a default layer-wise component rather than
 as the object of study: most residual graph classifiers reuse information along
 depth within a single stream.

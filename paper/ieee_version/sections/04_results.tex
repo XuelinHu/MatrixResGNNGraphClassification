@@ -37,9 +37,9 @@ MatrixResGated & 5 & 2.92 & ENZYMES \\
 \end{tabular}
 \end{table}
 
-ENZYMES should be read cautiously, because the absolute accuracies are low for
-all models. Excluding it leaves MatrixRes with 9 wins over 20 combinations and a
-mean rank of 2.05, so the aggregate preference is unchanged.
+ENZYMES should be read cautiously: excluding it leaves MatrixRes with 9 wins
+over 20 combinations and a mean rank of 2.05, so the aggregate preference is
+unchanged.
 
 To remove variation caused by the operator, we also report the GCNConv slice
 separately (Table~\ref{tab:main_benchmark}, Fig.~\ref{fig:main_benchmark}). The
@@ -68,9 +68,9 @@ Mutagenicity & 0.7644 & 0.7667 & 0.7738 & \(\mathbf{0.7784}\) & 0.7701 \\
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.98\columnwidth]{figures/exp/fig_main_benchmark_gcnconv.pdf}
-\caption{GCNConv benchmark at \(B=3\). Fold-level standard deviations range
-from 0.005 to 0.072 across cells.}
+\includegraphics[width=0.90\columnwidth]{figures/exp/fig_main_benchmark_gcnconv.pdf}
+\caption{GCNConv benchmark at \(B=3\); fold-level standard deviations range
+from 0.005 to 0.072.}
 \label{fig:main_benchmark}
 \end{figure}
 
@@ -113,7 +113,7 @@ Classes & Best model & Plain & Matrix & MatrixGated & Best NAcc \\
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.98\columnwidth]{figures/exp/fig_synthetic_multiclass_scaling.pdf}
+\includegraphics[width=0.90\columnwidth]{figures/exp/fig_synthetic_multiclass_scaling.pdf}
 \caption{Synthetic scaling from two to eight classes, averaged over five graph
 families and four operators.}
 \label{fig:synthetic_multiclass_scaling}
@@ -159,7 +159,7 @@ DD       & MatrixResGated & 1 & \(\mathbf{0.7283}\) & 7 & 0.7053 \\
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.98\columnwidth]{figures/exp/fig_branch_count_ablation.pdf}
+\includegraphics[width=0.90\columnwidth]{figures/exp/fig_branch_count_ablation.pdf}
 \caption{Branch-count ablation on PROTEINS and DD under GCNConv. Accuracy rises
 only within an effective operating region before saturating or declining.}
 \label{fig:branch_ablation}

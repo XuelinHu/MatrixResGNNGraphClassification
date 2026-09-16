@@ -37,15 +37,28 @@ References
 
 The three research questions are stated in Section I and answered in Section V.
 
-## Affiliation
+## Authors and funding
 
-Both authors share a single institution-level affiliation, as requested:
+| Author | Email | Role |
+| --- | --- | --- |
+| Jingchao Wang | static@zut.edu.cn | |
+| Xiaodan Cui | cuixiaodan2026@163.com | Corresponding author |
+| Fangfang Shan | 6129@zut.edu.cn | |
 
-> Liuzhou Railway Vocational Technical College, Liuzhou 545000, China
+All three share one affiliation:
 
-The corresponding author is marked with an asterisk. This also matches the
-template's own guidance not to differentiate among departments of the same
-organization.
+> School of Computer Science, Zhongyuan University of Technology,
+> Zhengzhou 450000, China
+
+Funding is declared in the first-page footnote, as the IEEE template expects:
+
+> This work was supported by the Science and Technology Research Project of
+> Henan Province under Grant No. 262102211055.
+
+In the Chinese companion the author names are kept in their pinyin form,
+because only the pinyin was supplied; replace them with the Chinese characters
+if you want them rendered that way. The grant program is translated literally
+as 河南省科技研究项目 — correct it if the official name differs.
 
 ## Fitting the six-page limit
 
@@ -109,13 +122,23 @@ Rebuilding from Crossref surfaced several problems in the previous
 
 ## Recent literature
 
-The submission checklist requires references from the last three years. Four
+The submission checklist requires references from the last three years. Seven
 references from 2023–2025 remain after the trim, all with verified DOIs:
 
 - Sui *et al.*, BMC Bioinformatics, 2023 — plant vacuole protein identification
 - Li *et al.*, Artificial Intelligence Review, 2024 — graph pooling survey
 - Du *et al.*, npj Computational Materials, 2024 — DenseGNN
 - Ngo *et al.*, bioRxiv, 2025 — plant functional annotation from knowledge graphs
+- Wang *et al.*, Expert Systems with Applications, 2025 — multi-granularity
+  contextual semantics for inductive knowledge graph completion
+- Wang *et al.*, Expert Systems with Applications, 2024 — ConeE, global and
+  local context-enhanced embedding
+- Wang *et al.*, IEEE Intelligent Systems, 2024 — text-enhanced transformer
+  fusion for multimodal knowledge graph completion
+
+The three knowledge-graph-completion references were supplied by the authors and
+are cited in the Introduction, alongside the plant-protein application. All
+three are first-authored by Jingchao Wang.
 
 ## Figures
 

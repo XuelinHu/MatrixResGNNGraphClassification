@@ -287,17 +287,17 @@
     },
     "score": 1.0
   },
-  "keriven2020benchmark": {
-    "doi": "10.48550/arXiv.2012.01450",
-    "expected": "A Unified Benchmark for the Diagnosis and Treatment of Graph Neural Networks",
+  "errica2020fair": {
+    "doi": "10.48550/arXiv.1912.09893",
+    "expected": "A Fair Comparison of Graph Neural Networks for Graph Classification",
     "resolved": {
-      "title": "Self-consistent theory of mobility edges in quasiperiodic chains",
+      "title": "A Fair Comparison of Graph Neural Networks for Graph Classification",
       "container": "arXiv",
-      "year": 2020,
-      "type": "Text",
+      "year": 2019,
+      "type": "Preprint",
       "source": "datacite"
     },
-    "score": 0.0
+    "score": 1.0
   },
   "kingma2014adam": {
     "doi": "10.48550/arXiv.1412.6980",
@@ -474,6 +474,42 @@
       "title": "Attention-based graph neural networks: a survey",
       "container": "Artificial Intelligence Review",
       "year": 2023,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "wang2025multigranularity": {
+    "doi": "10.1016/j.eswa.2024.125407",
+    "expected": "Exploring multi-granularity contextual semantics for fully inductive knowledge graph completion",
+    "resolved": {
+      "title": "Exploring multi-granularity contextual semantics for fully inductive knowledge graph completion",
+      "container": "Expert Systems with Applications",
+      "year": 2025,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "wang2024conee": {
+    "doi": "10.1016/j.eswa.2023.123116",
+    "expected": "ConeE: Global and local context-enhanced embedding for inductive knowledge graph completion",
+    "resolved": {
+      "title": "ConeE: Global and local context-enhanced embedding for inductive knowledge graph completion",
+      "container": "Expert Systems with Applications",
+      "year": 2024,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "wang2024textenhanced": {
+    "doi": "10.1109/MIS.2024.3378921",
+    "expected": "A Text-Enhanced Transformer Fusion Network for Multimodal Knowledge Graph Completion",
+    "resolved": {
+      "title": "A Text-Enhanced Transformer Fusion Network for Multimodal Knowledge Graph Completion",
+      "container": "IEEE Intelligent Systems",
+      "year": 2024,
       "type": "journal-article",
       "source": "crossref"
     },

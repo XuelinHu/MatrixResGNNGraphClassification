@@ -36,9 +36,10 @@
 
 \title{\textbf{用于图分类的矩阵残差图神经网络}\\[4pt]
 {\large\mdseries 中文对照稿}}
-\author{胡雪林 \quad 付晓琴\textsuperscript{*}\\[3pt]
-{\small 柳州铁道职业技术学院，广西柳州 545000，中国}\\[2pt]
-{\small \textsuperscript{*}通讯作者：fuxiaoqin@ltzy.edu.cn}}
+\author{Jingchao Wang \quad Xiaodan Cui\textsuperscript{*} \quad Fangfang Shan\\[3pt]
+{\small 中原工学院计算机学院，郑州 450000，中国}\\[2pt]
+{\small \textsuperscript{*}通讯作者：cuixiaodan2026@163.com}\\[3pt]
+{\small 基金项目：河南省科技研究项目（编号 262102211055）}}
 \date{}
 
 \begin{document}
@@ -58,9 +59,9 @@
 \section{引言}
 \label{sec:intro-zh}
 
-图神经网络（Graph Neural Networks, GNN）通过反复聚合局部邻域信息来学习图表征~\cite{kipf2017gcn}。这种消息传递视角已成为图分类的标准工具，因为它能够在同一个可微模型中同时利用节点属性、局部连接结构和图层级结构~\cite{gilmer2017neural,wu2020comprehensive}。该建模范式并不局限于标准基准：图分类器已被用于依据接触图识别植物液泡蛋白~\cite{suiIdentificationPlantVacuole2023}，以及在植物知识图谱上传播功能注释~\cite{baongoImprovingPlantFunctional2025}。在这类任务中，图标签可能同时依赖局部模体和全局组织结构，因此有用的中间证据必须保留到图层级池化阶段~\cite{ying2018hierarchical}。
+图神经网络（Graph Neural Networks, GNN）通过反复聚合局部邻域信息来学习图表征~\cite{kipf2017gcn}。这种消息传递视角已成为图分类的标准工具，因为它能够在同一个可微模型中同时利用节点属性、局部连接结构和图层级结构~\cite{gilmer2017neural,wu2020comprehensive}。该建模范式并不局限于标准基准：图分类器已被用于依据接触图识别植物液泡蛋白~\cite{suiIdentificationPlantVacuole2023}、在植物知识图谱上传播功能注释~\cite{baongoImprovingPlantFunctional2025}，以及知识图谱补全——近期工作分别以多粒度上下文语义~\cite{wang2025multigranularity}、全局与局部上下文~\cite{wang2024conee}以及文本融合证据~\cite{wang2024textenhanced}来增强节点表示。在这类任务中，图标签可能同时依赖局部模体和全局组织结构，因此有用的中间证据必须保留到图层级池化阶段~\cite{ying2018hierarchical}。
 
-增加深度或加入并行分支可以扩展容量，但同时也会改变网络中的信息传输。深层 GNN 可能出现过平滑（over-smoothing），即节点表示随传播步数增加而趋于相似~\cite{li2018deeper,oono2020simple}；也可能出现过挤压（over-squashing），即远距离信息被压缩进尺寸受限的消息中~\cite{alon2020bottleneck,topping2021understanding}。这些问题对图层级预测尤为关键，因为最终读出依赖于到达池化阶段的中间表示质量。残差连接是应对上述困难的常见手段~\cite{he2016deep,bresson2017residual}，DropEdge 与 Jumping Knowledge 聚合也以在传播过程中保留有用信息为目标~\cite{rong2019dropedge,xu2018representation}。然而，残差连接通常仍被当作默认的逐层组件，而不是被研究的对象：大多数残差图分类器只在同一条流中沿深度方向复用信息。
+增加深度或加入并行分支可以扩展容量，但同时也会改变网络中的信息传输。深层 GNN 可能出现过平滑（over-smoothing），即节点表示随传播步数增加而趋于相似~\cite{li2018deeper}；也可能出现过挤压（over-squashing），即远距离信息被压缩进尺寸受限的消息中~\cite{alon2020bottleneck,topping2021understanding}。这些问题对图层级预测尤为关键，因为最终读出依赖于到达池化阶段的中间表示质量。残差连接是应对上述困难的常见手段~\cite{he2016deep,bresson2017residual}，DropEdge 也以在传播过程中保留有用信息为目标~\cite{rong2019dropedge}。然而，残差连接通常仍被当作默认的逐层组件，而不是被研究的对象：大多数残差图分类器只在同一条流中沿深度方向复用信息。
 
 一旦模型包含多个分支，沿深度的残差复用就只是其中一条可能路径。残差信息也可以在同一深度的相邻分支之间流动，或经由分支--深度的对角邻域传递。已有工作提升了消息传递算子、池化与高阶邻域混合的能力~\cite{abu2019mixhop,li2024graph}，但这些设计并未分离出残差路由这一问题本身：如果在某一深度上存在多个分支状态，模型应当只复用同一分支的前一状态、横向交换状态，还是在局部二维邻域中同时组合两个方向？
 
@@ -79,7 +80,7 @@
 
 \textbf{消息传递。} 现代图学习建立在 Kipf 和 Welling 的谱卷积之上~\cite{kipf2017gcn}。GraphSAGE 引入归纳式邻域聚合~\cite{hamilton2017inductive}，图注意力网络以学习到的注意力对邻居加权~\cite{velivckovic2017graph}，消息传递神经网络框架则把上述设计统一用于分子性质预测~\cite{gilmer2017neural}。GIN 建立的 Weisfeiler--Lehman 联系说明单射多重集聚合是该族判别能力的关键~\cite{xu2019gin}，综述文献梳理了由此形成的设计空间~\cite{wu2020comprehensive}。
 
-\textbf{深层 GNN 与残差连接。} 在消息传递中加深网络并非没有代价：过平滑使节点表示随传播深度增加而收敛~\cite{li2018deeper,oono2020simple}，过挤压则把远距离信息压缩进固定尺寸的消息~\cite{alon2020bottleneck,topping2021understanding}。DropEdge 在训练时随机移除边~\cite{rong2019dropedge}，Jumping Knowledge 聚合跨层表示~\cite{xu2018representation}，残差或稠密跳跃路径把早期状态向前传递~\cite{he2016deep}。残差门控图卷积网络学习历史状态应以多强的权重重新注入~\cite{bresson2017residual}。这些方法都在单条流内复用沿深度的状态；本文保留同样的复用原则，但提出不同的问题：分支--层网格上的哪些局部残差邻域应当被连接。
+\textbf{深层 GNN 与残差连接。} 在消息传递中加深网络并非没有代价：过平滑使节点表示随传播深度增加而收敛~\cite{li2018deeper}，过挤压则把远距离信息压缩进固定尺寸的消息~\cite{alon2020bottleneck,topping2021understanding}。DropEdge 在训练时随机移除边~\cite{rong2019dropedge}，残差或稠密跳跃路径则把早期状态向前传递~\cite{he2016deep}。残差门控图卷积网络学习历史状态应以多强的权重重新注入~\cite{bresson2017residual}。这些方法都在单条流内复用沿深度的状态；本文保留同样的复用原则，但提出不同的问题：分支--层网格上的哪些局部残差邻域应当被连接。
 
 \textbf{多分支与高阶架构。} 高阶邻域混合优于单跳聚合~\cite{abu2019mixhop}。层次池化通过在处理过程中粗化图引入了第二个结构维度~\cite{ying2018hierarchical}，近期综述对由此形成的设计进行了归纳~\cite{li2024graph}。这些工作提升的是传播层的表达能力或聚合能力。与之不同，本文固定传播算子，只改变隐藏状态的复用方式，从而使残差拓扑本身成为可识别的因素。
 
@@ -312,7 +313,7 @@ fold-0 扫描只用于候选发现。在 PROTEINS 上，MatrixRes 在测试的�
 
 \subsection{局限性}
 
-以下几点限制了结论的普适性。基准使用固定的图层级池化与分类头，因此其他读出设计可能与残差拓扑产生交互。所比较的算子是经典消息传递骨干，而非近期的图 Transformer 或局部--全局混合架构~\cite{dwivedi2020generalization}，这是刻意的控制选择，但也意味着本文不是最先进模型的比较。灵敏度扫描仅在 fold 0 上进行，候选复验也仅覆盖 PROTEINS 与 DD 上的 MatrixResGated。ENZYMES 的绝对精度低且波动大。机制分析属于相关性分析：分支多样性、余弦相似度、CKA 与梯度范数支持一个自洽的解释，但并不证明因果性。最后，基准有意避免任务专用的化学或生物特征工程，因此绝对精度不应被解读为经过优化的最先进分子预测结果，合成图族也只是用于压力测试残差拓扑，而非替代更广泛的真实多分类基准。未来工作应把比较扩展到更大的数据集、更丰富的读出机制、近期的局部--全局骨干，以及可学习残差邻域策略，以替代人工指定的纵向、横向与矩阵模板。
+以下几点限制了结论的普适性。基准使用固定的图层级池化与分类头，因此其他读出设计可能与残差拓扑产生交互。所比较的算子是经典消息传递骨干，而非近期的图 Transformer 或局部--全局混合架构，这是刻意的控制选择，但也意味着本文不是最先进模型的比较。灵敏度扫描仅在 fold 0 上进行，候选复验也仅覆盖 PROTEINS 与 DD 上的 MatrixResGated。ENZYMES 的绝对精度低且波动大。机制分析属于相关性分析：分支多样性、余弦相似度、CKA 与梯度范数支持一个自洽的解释，但并不证明因果性。最后，基准有意避免任务专用的化学或生物特征工程，因此绝对精度不应被解读为经过优化的最先进分子预测结果，合成图族也只是用于压力测试残差拓扑，而非替代更广泛的真实多分类基准。未来工作应把比较扩展到更大的数据集、更丰富的读出机制、近期的局部--全局骨干，以及可学习残差邻域策略，以替代人工指定的纵向、横向与矩阵模板。
 
 \section{结论}
 \label{sec:conclusion-zh}

@@ -50,12 +50,12 @@ Against the conference requirements in `templates/notice_text.txt`:
 | --- | --- |
 | English manuscript, IEEE conference format | Done |
 | Page limit — 6 pages including references | Done — 6 pages for both English and Chinese |
-| Title, authors, corresponding author, affiliation, abstract, keywords, sections, acknowledgment, references | Done |
-| Affiliation at institution level only | Done — both authors share one affiliation |
+| Title, authors, corresponding author, affiliation, abstract, keywords, sections, acknowledgment, references | Done — 3 authors, Xiaodan Cui corresponding |
+| Funding acknowledgment | Done — first-page footnote, Grant No. 262102211055 |
 | All figures cited in order and readable at 100% | Done |
 | All tables cited in order and editable | Done (LaTeX source) |
 | Every reference has a DOI | Done — 29/29 |
 | At least 10 references | Done — 29 |
-| References from the last three years | Done — 4 from 2023–2025 |
+| References from the last three years | Done — 7 from 2023–2025 |
 | Reference authors from 3+ countries | Done |
 | AI-assistance disclosure | Kept in Acknowledgment |

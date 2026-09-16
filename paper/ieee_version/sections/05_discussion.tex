@@ -75,9 +75,9 @@ regimes under finer discrimination.
 Several factors bound these findings. The benchmark uses a fixed graph-level
 pooling and classification head, so alternative readouts may interact with
 residual topology. The compared operators are canonical message-passing
-backbones rather than recent graph transformers or local-global
-hybrids~\cite{dwivedi2020generalization}, which is a deliberate control choice
-but means the study is not a state-of-the-art comparison. The sensitivity scan is fold-0 only, and the candidate reruns cover
+backbones rather than recent graph transformers or local-global hybrids, which
+is a deliberate control choice but means the study is not a state-of-the-art
+comparison. The sensitivity scan is fold-0 only, and the candidate reruns cover
 MatrixResGated on PROTEINS and DD alone. ENZYMES has low absolute accuracy and
 high variability. The mechanism analysis is correlational: branch diversity,
 cosine similarity, CKA, and gradient norms support a coherent explanation but do
@@ -86,6 +86,5 @@ chemical or biological feature engineering, so absolute accuracies should not be
 read as optimized state-of-the-art molecular prediction results, and the
 synthetic families stress-test residual topology rather than substitute for
 broader real multi-class benchmarks. Future work should extend the comparison to
-larger datasets, richer readouts, recent local-global backbones, and learned
-residual-neighborhood policies that replace the hand-specified vertical,
-horizontal, and matrix stencils.
+larger datasets, richer readouts, and learned residual-neighborhood policies
+that replace the hand-specified stencils.

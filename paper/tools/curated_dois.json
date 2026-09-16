@@ -158,5 +158,17 @@
   "sun2023attention": {
     "title": "Attention-based graph neural networks: a survey",
     "doi": "10.1007/s10462-023-10577-2"
+  },
+  "wang2025multigranularity": {
+    "title": "Exploring multi-granularity contextual semantics for fully inductive knowledge graph completion",
+    "doi": "10.1016/j.eswa.2024.125407"
+  },
+  "wang2024conee": {
+    "title": "ConeE: Global and local context-enhanced embedding for inductive knowledge graph completion",
+    "doi": "10.1016/j.eswa.2023.123116"
+  },
+  "wang2024textenhanced": {
+    "title": "A Text-Enhanced Transformer Fusion Network for Multimodal Knowledge Graph Completion",
+    "doi": "10.1109/MIS.2024.3378921"
   }
 }

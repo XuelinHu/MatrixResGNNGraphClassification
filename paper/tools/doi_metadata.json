@@ -1380,5 +1380,176 @@
     "type": "journal-article",
     "publisher": "Springer Science and Business Media LLC",
     "curated_title": "Attention-based graph neural networks: a survey"
+  },
+  "wang2025multigranularity": {
+    "source": "crossref",
+    "title": "Exploring multi-granularity contextual semantics for fully inductive knowledge graph completion",
+    "authors": [
+      {
+        "given": "Jingchao",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Weimin",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Alex Munyole",
+        "family": "Luvembe",
+        "name": ""
+      },
+      {
+        "given": "Xiao",
+        "family": "Yu",
+        "name": ""
+      },
+      {
+        "given": "Xinyi",
+        "family": "Zhang",
+        "name": ""
+      },
+      {
+        "given": "Fangyu",
+        "family": "Liu",
+        "name": ""
+      },
+      {
+        "given": "Fangfang",
+        "family": "Liu",
+        "name": ""
+      },
+      {
+        "given": "Hao",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Zhenhai",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Qun",
+        "family": "Jin",
+        "name": ""
+      }
+    ],
+    "container": "Expert Systems with Applications",
+    "short_container": "Expert Systems with Applications",
+    "event": null,
+    "volume": "260",
+    "issue": null,
+    "page": "125407",
+    "article_number": "125407",
+    "year": 2025,
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "curated_title": "Exploring multi-granularity contextual semantics for fully inductive knowledge graph completion"
+  },
+  "wang2024conee": {
+    "source": "crossref",
+    "title": "ConeE: Global and local context-enhanced embedding for inductive knowledge graph completion",
+    "authors": [
+      {
+        "given": "Jingchao",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Weimin",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Fangfang",
+        "family": "Liu",
+        "name": ""
+      },
+      {
+        "given": "Zhenhai",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Alex Munyole",
+        "family": "Luvembe",
+        "name": ""
+      },
+      {
+        "given": "Qun",
+        "family": "Jin",
+        "name": ""
+      },
+      {
+        "given": "Quanke",
+        "family": "Pan",
+        "name": ""
+      },
+      {
+        "given": "Fangyu",
+        "family": "Liu",
+        "name": ""
+      }
+    ],
+    "container": "Expert Systems with Applications",
+    "short_container": "Expert Systems with Applications",
+    "event": null,
+    "volume": "246",
+    "issue": null,
+    "page": "123116",
+    "article_number": "123116",
+    "year": 2024,
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "curated_title": "ConeE: Global and local context-enhanced embedding for inductive knowledge graph completion"
+  },
+  "wang2024textenhanced": {
+    "source": "crossref",
+    "title": "A Text-Enhanced Transformer Fusion Network for Multimodal Knowledge Graph Completion",
+    "authors": [
+      {
+        "given": "Jingchao",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Xiao",
+        "family": "Liu",
+        "name": ""
+      },
+      {
+        "given": "Weimin",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Fangfang",
+        "family": "Liu",
+        "name": ""
+      },
+      {
+        "given": "Xing",
+        "family": "Wu",
+        "name": ""
+      },
+      {
+        "given": "Qun",
+        "family": "Jin",
+        "name": ""
+      }
+    ],
+    "container": "IEEE Intelligent Systems",
+    "short_container": "IEEE Intell. Syst.",
+    "event": null,
+    "volume": "39",
+    "issue": "3",
+    "page": "54-62",
+    "article_number": null,
+    "year": 2024,
+    "type": "journal-article",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "curated_title": "A Text-Enhanced Transformer Fusion Network for Multimodal Knowledge Graph Completion"
   }
 }
