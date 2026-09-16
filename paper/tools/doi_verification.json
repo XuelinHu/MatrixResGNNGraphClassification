@@ -1,0 +1,482 @@
+{
+  "kipf2017gcn": {
+    "doi": "10.48550/arXiv.1609.02907",
+    "expected": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "resolved": {
+      "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+      "container": "arXiv",
+      "year": 2016,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "gilbert1959random": {
+    "doi": "10.1214/aoms/1177706098",
+    "expected": "Random graphs",
+    "resolved": {
+      "title": "Random Graphs",
+      "container": "The Annals of Mathematical Statistics",
+      "year": 1959,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "barabasi1999emergence": {
+    "doi": "10.1126/science.286.5439.509",
+    "expected": "Emergence of scaling in random networks",
+    "resolved": {
+      "title": "Emergence of Scaling in Random Networks",
+      "container": "Science",
+      "year": 1999,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "holland1983stochastic": {
+    "doi": "10.1016/0378-8733(83)90021-7",
+    "expected": "Stochastic blockmodels: First steps",
+    "resolved": {
+      "title": "Stochastic blockmodels: First steps",
+      "container": "Social Networks",
+      "year": 1983,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "watts1998collective": {
+    "doi": "10.1038/30918",
+    "expected": "Collective dynamics of small-world networks",
+    "resolved": {
+      "title": "Collective dynamics of ‘small-world’ networks",
+      "container": "Nature",
+      "year": 1998,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "wormald1999models": {
+    "doi": "10.1017/CBO9780511721335.010",
+    "expected": "Models of random regular graphs",
+    "resolved": {
+      "title": "Models of Random Regular Graphs",
+      "container": "Surveys in Combinatorics, 1999",
+      "year": 1999,
+      "type": "book-chapter",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "xu2019gin": {
+    "doi": "10.48550/arXiv.1810.00826",
+    "expected": "How Powerful are Graph Neural Networks",
+    "resolved": {
+      "title": "How Powerful are Graph Neural Networks?",
+      "container": "arXiv",
+      "year": 2018,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "morris2020tudataset": {
+    "doi": "10.48550/arXiv.2007.08663",
+    "expected": "TUDataset: A Collection of Benchmark Datasets for Learning with Graphs",
+    "resolved": {
+      "title": "TUDataset: A collection of benchmark datasets for learning with graphs",
+      "container": "arXiv",
+      "year": 2020,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "li2018deeper": {
+    "doi": "10.1609/aaai.v32i1.11604",
+    "expected": "Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning",
+    "resolved": {
+      "title": "Deeper Insights Into Graph Convolutional Networks for Semi-Supervised Learning",
+      "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "year": 2018,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "li2019deepgcns": {
+    "doi": "10.1109/ICCV.2019.00936",
+    "expected": "DeepGCNs: Can GCNs Go as Deep as CNNs",
+    "resolved": {
+      "title": "DeepGCNs: Can GCNs Go As Deep As CNNs?",
+      "container": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "year": 2019,
+      "type": "proceedings-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "gori2005new": {
+    "doi": "10.1109/IJCNN.2005.1555942",
+    "expected": "A new model for learning in graph domains",
+    "resolved": {
+      "title": "A new model for learning in graph domains",
+      "container": "Proceedings. 2005 IEEE International Joint Conference on Neural Networks, 2005.",
+      "year": null,
+      "type": "proceedings-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "hamilton2017inductive": {
+    "doi": "10.48550/arXiv.1706.02216",
+    "expected": "Inductive Representation Learning on Large Graphs",
+    "resolved": {
+      "title": "Inductive Representation Learning on Large Graphs",
+      "container": "arXiv",
+      "year": 2017,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "velivckovic2017graph": {
+    "doi": "10.48550/arXiv.1710.10903",
+    "expected": "Graph Attention Networks",
+    "resolved": {
+      "title": "Graph Attention Networks",
+      "container": "arXiv",
+      "year": 2017,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "duvenaud2015convolutional": {
+    "doi": "10.48550/arXiv.1509.09292",
+    "expected": "Convolutional Networks on Graphs for Learning Molecular Fingerprints",
+    "resolved": {
+      "title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints",
+      "container": "arXiv",
+      "year": 2015,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "gilmer2017neural": {
+    "doi": "10.48550/arXiv.1704.01212",
+    "expected": "Neural Message Passing for Quantum Chemistry",
+    "resolved": {
+      "title": "Neural Message Passing for Quantum Chemistry",
+      "container": "arXiv",
+      "year": 2017,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "ying2018hierarchical": {
+    "doi": "10.48550/arXiv.1806.08804",
+    "expected": "Hierarchical Graph Representation Learning with Differentiable Pooling",
+    "resolved": {
+      "title": "Hierarchical Graph Representation Learning with Differentiable Pooling",
+      "container": "arXiv",
+      "year": 2018,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "lee2019self": {
+    "doi": "10.48550/arXiv.1904.08082",
+    "expected": "Self-Attention Graph Pooling",
+    "resolved": {
+      "title": "Self-Attention Graph Pooling",
+      "container": "arXiv",
+      "year": 2019,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "cangea2018towards": {
+    "doi": "10.48550/arXiv.1811.01287",
+    "expected": "Towards Sparse Hierarchical Graph Classifiers",
+    "resolved": {
+      "title": "Towards Sparse Hierarchical Graph Classifiers",
+      "container": "arXiv",
+      "year": 2018,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "bianchi2020graph": {
+    "doi": "10.1109/TPAMI.2021.3054830",
+    "expected": "Graph Neural Networks With Convolutional ARMA Filters",
+    "resolved": {
+      "title": "Graph Neural Networks with Convolutional ARMA Filters",
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "year": 2021,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "he2016deep": {
+    "doi": "10.1109/CVPR.2016.90",
+    "expected": "Deep Residual Learning for Image Recognition",
+    "resolved": {
+      "title": "Deep Residual Learning for Image Recognition",
+      "container": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "year": 2016,
+      "type": "proceedings-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "xu2018representation": {
+    "doi": "10.48550/arXiv.1806.03536",
+    "expected": "Representation Learning on Graphs with Jumping Knowledge Networks",
+    "resolved": {
+      "title": "Representation Learning on Graphs with Jumping Knowledge Networks",
+      "container": "arXiv",
+      "year": 2018,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "rong2019dropedge": {
+    "doi": "10.48550/arXiv.1907.10903",
+    "expected": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification",
+    "resolved": {
+      "title": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification",
+      "container": "arXiv",
+      "year": 2019,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "bresson2017residual": {
+    "doi": "10.48550/arXiv.1711.07553",
+    "expected": "Residual Gated Graph ConvNets",
+    "resolved": {
+      "title": "Residual Gated Graph ConvNets",
+      "container": "arXiv",
+      "year": 2017,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "fey2019fast": {
+    "doi": "10.48550/arXiv.1903.02428",
+    "expected": "Fast Graph Representation Learning with PyTorch Geometric",
+    "resolved": {
+      "title": "Fast Graph Representation Learning with PyTorch Geometric",
+      "container": "arXiv",
+      "year": 2019,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "keriven2020benchmark": {
+    "doi": "10.48550/arXiv.2012.01450",
+    "expected": "A Unified Benchmark for the Diagnosis and Treatment of Graph Neural Networks",
+    "resolved": {
+      "title": "Self-consistent theory of mobility edges in quasiperiodic chains",
+      "container": "arXiv",
+      "year": 2020,
+      "type": "Text",
+      "source": "datacite"
+    },
+    "score": 0.0
+  },
+  "kingma2014adam": {
+    "doi": "10.48550/arXiv.1412.6980",
+    "expected": "Adam: A Method for Stochastic Optimization",
+    "resolved": {
+      "title": "Adam: A Method for Stochastic Optimization",
+      "container": "arXiv",
+      "year": 2014,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "abu2019mixhop": {
+    "doi": "10.48550/arXiv.1905.00067",
+    "expected": "MixHop: Higher-Order Graph Convolutional Architectures via Sparsified Neighborhood Mixing",
+    "resolved": {
+      "title": "MixHop: Higher-Order Graph Convolutional Architectures via Sparsified Neighborhood Mixing",
+      "container": "arXiv",
+      "year": 2019,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "dwivedi2020generalization": {
+    "doi": "10.48550/arXiv.2012.09699",
+    "expected": "A Generalization of Transformer Networks to Graphs",
+    "resolved": {
+      "title": "A Generalization of Transformer Networks to Graphs",
+      "container": "arXiv",
+      "year": 2020,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "li2021training": {
+    "doi": "10.48550/arXiv.2106.07476",
+    "expected": "Training Graph Neural Networks with 1000 Layers",
+    "resolved": {
+      "title": "Training Graph Neural Networks with 1000 Layers",
+      "container": "arXiv",
+      "year": 2021,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "oono2020simple": {
+    "doi": "10.48550/arXiv.1905.10947",
+    "expected": "Graph Neural Networks Exponentially Lose Expressive Power for Node Classification",
+    "resolved": {
+      "title": "Graph Neural Networks Exponentially Lose Expressive Power for Node Classification",
+      "container": "arXiv",
+      "year": 2019,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "chenSimpleDeepGraph2020": {
+    "doi": "10.48550/arXiv.2007.02133",
+    "expected": "Simple and Deep Graph Convolutional Networks",
+    "resolved": {
+      "title": "Simple and Deep Graph Convolutional Networks",
+      "container": "arXiv",
+      "year": 2020,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "topping2021understanding": {
+    "doi": "10.48550/arXiv.2111.14522",
+    "expected": "Understanding over-squashing and bottlenecks on graphs via curvature",
+    "resolved": {
+      "title": "Understanding over-squashing and bottlenecks on graphs via curvature",
+      "container": "arXiv",
+      "year": 2021,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "alon2020bottleneck": {
+    "doi": "10.48550/arXiv.2006.05205",
+    "expected": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+    "resolved": {
+      "title": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+      "container": "arXiv",
+      "year": 2020,
+      "type": "Preprint",
+      "source": "datacite"
+    },
+    "score": 1.0
+  },
+  "wu2020comprehensive": {
+    "doi": "10.1109/TNNLS.2020.2978386",
+    "expected": "A Comprehensive Survey on Graph Neural Networks",
+    "resolved": {
+      "title": "A Comprehensive Survey on Graph Neural Networks",
+      "container": "IEEE Transactions on Neural Networks and Learning Systems",
+      "year": 2021,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "suiIdentificationPlantVacuole2023": {
+    "doi": "10.1186/s12859-023-05475-x",
+    "expected": "Identification of plant vacuole proteins by using graph neural network and contact maps",
+    "resolved": {
+      "title": "Identification of plant vacuole proteins by using graph neural network and contact maps",
+      "container": "BMC Bioinformatics",
+      "year": 2023,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "baongoImprovingPlantFunctional2025": {
+    "doi": "10.1101/2025.05.07.652750",
+    "expected": "Improving plant functional annotation from knowledge graphs using Graph Neural Networks",
+    "resolved": {
+      "title": "Improving plant functional annotation from knowledge graphs using Graph Neural Networks",
+      "container": null,
+      "year": 2025,
+      "type": "posted-content",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "charulekhaUncoveringComplicatedPlant": {
+    "doi": "10.1201/9781003545781-13",
+    "expected": "Uncovering Complicated Plant Biological Networks through the Assistance of Artificial Intelligence Tools",
+    "resolved": {
+      "title": "Uncovering Complicated Plant Biological Networks through the Assistance of Artificial Intelligence Tools",
+      "container": "AI in Plant Science and Precision Agriculture",
+      "year": 2026,
+      "type": "book-chapter",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "li2024graph": {
+    "doi": "10.1007/s10462-024-10949-2",
+    "expected": "Graph pooling for graph-level representation learning: a survey",
+    "resolved": {
+      "title": "Graph pooling for graph-level representation learning: a survey",
+      "container": "Artificial Intelligence Review",
+      "year": 2024,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "du2024densegnn": {
+    "doi": "10.1038/s41524-024-01444-x",
+    "expected": "DenseGNN: universal and scalable deeper graph neural networks for high-performance property prediction in crystals and molecules",
+    "resolved": {
+      "title": "DenseGNN: universal and scalable deeper graph neural networks for high-performance property prediction in crystals and molecules",
+      "container": "npj Computational Materials",
+      "year": 2024,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  },
+  "sun2023attention": {
+    "doi": "10.1007/s10462-023-10577-2",
+    "expected": "Attention-based graph neural networks: a survey",
+    "resolved": {
+      "title": "Attention-based graph neural networks: a survey",
+      "container": "Artificial Intelligence Review",
+      "year": 2023,
+      "type": "journal-article",
+      "source": "crossref"
+    },
+    "score": 1.0
+  }
+}

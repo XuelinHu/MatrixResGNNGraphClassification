@@ -1,0 +1,909 @@
+{
+  "kipf2017gcn": {
+    "bib_title": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.857,
+      "doi": "10.18178/wcse.2019.06.016",
+      "title": "Hybrid Graph Convolutional Networks for Semi-Supervised Classification",
+      "type": "proceedings-article",
+      "container": "Proceedings of 2019 the 9th International Workshop on Computer Science and Engineering",
+      "publisher": "WCSE",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": 2019,
+      "event": "2019 the 9th International Workshop on Computer Science and Engineering",
+      "authors": []
+    }
+  },
+  "gilbert1959random": {
+    "bib_title": "Random graphs",
+    "bib_type": "article",
+    "has_doi": true,
+    "existing_doi": "10.1214/aoms/1177706098",
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1214/aoms/1177706098",
+      "title": "Random Graphs",
+      "type": "journal-article",
+      "container": "The Annals of Mathematical Statistics",
+      "publisher": "Institute of Mathematical Statistics",
+      "volume": "30",
+      "issue": "4",
+      "page": "1141-1144",
+      "year": 1959,
+      "event": null,
+      "authors": [
+        "E. N. Gilbert"
+      ]
+    }
+  },
+  "barabasi1999emergence": {
+    "bib_title": "Emergence of scaling in random networks",
+    "bib_type": "article",
+    "has_doi": true,
+    "existing_doi": "10.1126/science.286.5439.509",
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1515/9781400841356.349",
+      "title": "Emergence of Scaling in Random Networks",
+      "type": "book-chapter",
+      "container": "The Structure and Dynamics of Networks",
+      "publisher": "Princeton University Press",
+      "volume": null,
+      "issue": null,
+      "page": "349-352",
+      "year": 2011,
+      "event": null,
+      "authors": [
+        "A.-L. Barabási",
+        "R. Albert"
+      ]
+    }
+  },
+  "holland1983stochastic": {
+    "bib_title": "Stochastic blockmodels: First steps",
+    "bib_type": "article",
+    "has_doi": true,
+    "existing_doi": "10.1016/0378-8733(83)90021-7",
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1016/0378-8733(83)90021-7",
+      "title": "Stochastic blockmodels: First steps",
+      "type": "journal-article",
+      "container": "Social Networks",
+      "publisher": "Elsevier BV",
+      "volume": "5",
+      "issue": "2",
+      "page": "109-137",
+      "year": 1983,
+      "event": null,
+      "authors": [
+        "Paul W. Holland",
+        "Kathryn Blackmond Laskey",
+        "Samuel Leinhardt"
+      ]
+    }
+  },
+  "watts1998collective": {
+    "bib_title": "Collective dynamics of `small-world' networks",
+    "bib_type": "article",
+    "has_doi": true,
+    "existing_doi": "10.1038/30918",
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1515/9781400841356.301",
+      "title": "Collective dynamics of 'small-world' networks",
+      "type": "book-chapter",
+      "container": "The Structure and Dynamics of Networks",
+      "publisher": "Princeton University Press",
+      "volume": null,
+      "issue": null,
+      "page": "301-303",
+      "year": 2011,
+      "event": null,
+      "authors": [
+        "Duncan J. Watts",
+        "Steven H. Strogatz"
+      ]
+    }
+  },
+  "wormald1999models": {
+    "bib_title": "Models of random regular graphs",
+    "bib_type": "incollection",
+    "has_doi": true,
+    "existing_doi": "10.1017/CBO9780511721335.010",
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1017/cbo9780511721335.010",
+      "title": "Models of Random Regular Graphs",
+      "type": "book-chapter",
+      "container": "Surveys in Combinatorics, 1999",
+      "publisher": "Cambridge University Press",
+      "volume": null,
+      "issue": null,
+      "page": "239-298",
+      "year": 1999,
+      "event": null,
+      "authors": [
+        "N. C. Wormald"
+      ]
+    }
+  },
+  "xu2019gin": {
+    "bib_title": "How Powerful are Graph Neural Networks",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.667,
+      "doi": "10.1145/3538712.3538737",
+      "title": "How Powerful are Membership Inference Attacks on Graph Neural Networks?",
+      "type": "proceedings-article",
+      "container": "34th International Conference on Scientific and Statistical Database Management",
+      "publisher": "ACM",
+      "volume": null,
+      "issue": null,
+      "page": "1-4",
+      "year": 2022,
+      "event": "SSDBM 2022: 34th International Conference on Scientific and Statistical Database Management",
+      "authors": [
+        "Abdellah Jnaini",
+        "Afafe Bettar",
+        "Mohammed Amine Koulali"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1810.00826v3",
+      "title": "How Powerful are Graph Neural Networks?",
+      "year": "2018",
+      "doi": "10.48550/arXiv.1810.00826v3"
+    }
+  },
+  "morris2020tudataset": {
+    "bib_title": "TUDataset: A Collection of Benchmark Datasets for Learning with Graphs",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.273,
+      "doi": "10.1109/ieeedata.2026.3719251/v2/review2",
+      "title": "Review for \"Collection: Benchmark Datasets for the Evaluation of Data Imputation Algorithms\"",
+      "type": "peer-review",
+      "container": null,
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": 2026,
+      "event": null,
+      "authors": []
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "2007.08663v1",
+      "title": "TUDataset: A collection of benchmark datasets for learning with graphs",
+      "year": "2020",
+      "doi": "10.48550/arXiv.2007.08663v1"
+    }
+  },
+  "li2018deeper": {
+    "bib_title": "Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1609/aaai.v32i1.11604",
+      "title": "Deeper Insights Into Graph Convolutional Networks for Semi-Supervised Learning",
+      "type": "journal-article",
+      "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "volume": "32",
+      "issue": "1",
+      "page": null,
+      "year": 2018,
+      "event": null,
+      "authors": [
+        "Qimai Li",
+        "Zhichao Han",
+        "Xiao-ming Wu"
+      ]
+    }
+  },
+  "li2019deepgcns": {
+    "bib_title": "DeepGCNs: Can GCNs Go as Deep as CNNs",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1109/iccv.2019.00936",
+      "title": "DeepGCNs: Can GCNs Go As Deep As CNNs?",
+      "type": "proceedings-article",
+      "container": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "publisher": "IEEE",
+      "volume": null,
+      "issue": null,
+      "page": "9266-9275",
+      "year": 2019,
+      "event": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "authors": [
+        "Guohao Li",
+        "Matthias Muller",
+        "Ali Thabet",
+        "Bernard Ghanem"
+      ]
+    }
+  },
+  "gori2005new": {
+    "bib_title": "A new model for learning in graph domains",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1109/ijcnn.2005.1555942",
+      "title": "A new model for learning in graph domains",
+      "type": "proceedings-article",
+      "container": "Proceedings. 2005 IEEE International Joint Conference on Neural Networks, 2005.",
+      "publisher": "IEEE",
+      "volume": "2",
+      "issue": null,
+      "page": "729-734",
+      "year": null,
+      "event": "International Joint Conference on Neural Networks 2005",
+      "authors": [
+        "M. Gori",
+        "G. Monfardini",
+        "F. Scarselli"
+      ]
+    }
+  },
+  "hamilton2017inductive": {
+    "bib_title": "Inductive Representation Learning on Large Graphs",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.5,
+      "doi": "10.21203/rs.3.rs-3972512/v1",
+      "title": "Unsupervised Inductive node representation learning for dynamic graphs",
+      "type": "posted-content",
+      "container": null,
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": 2024,
+      "event": null,
+      "authors": [
+        "Wen-Gang Zhou",
+        "Khushnood Abbas"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1706.02216v4",
+      "title": "Inductive Representation Learning on Large Graphs",
+      "year": "2017",
+      "doi": "10.48550/arXiv.1706.02216v4"
+    }
+  },
+  "velivckovic2017graph": {
+    "bib_title": "Graph Attention Networks",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.429,
+      "doi": "10.1021/acsomega.5c02173.s001",
+      "title": "IGAT: Interpretable Graph Attention Networks for Ligand Optimization",
+      "type": "component",
+      "container": null,
+      "publisher": "American Chemical Society (ACS)",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": null,
+      "event": null,
+      "authors": []
+    },
+    "arxiv": null
+  },
+  "duvenaud2015convolutional": {
+    "bib_title": "Convolutional networks on graphs for learning molecular fingerprints",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.444,
+      "doi": "10.31979/etd.yca4-fmqh",
+      "title": "Deep Learning on Graphs using Graph Convolutional Networks",
+      "type": "dissertation",
+      "container": null,
+      "publisher": "San Jose State University Library",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": null,
+      "event": null,
+      "authors": [
+        "Saurabh Mithe"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1509.09292v2",
+      "title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints",
+      "year": "2015",
+      "doi": "10.48550/arXiv.1509.09292v2"
+    }
+  },
+  "gilmer2017neural": {
+    "bib_title": "Neural Message Passing for Quantum Chemistry",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.5,
+      "doi": "10.1007/978-3-030-40245-7_10",
+      "title": "Message Passing Neural Networks",
+      "type": "book-chapter",
+      "container": "Lecture Notes in Physics",
+      "publisher": "Springer International Publishing",
+      "volume": null,
+      "issue": null,
+      "page": "199-214",
+      "year": 2020,
+      "event": null,
+      "authors": [
+        "Justin Gilmer",
+        "Samuel S. Schoenholz",
+        "Patrick F. Riley",
+        "Oriol Vinyals",
+        "George E. Dahl"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1704.01212v2",
+      "title": "Neural Message Passing for Quantum Chemistry",
+      "year": "2017",
+      "doi": "10.48550/arXiv.1704.01212v2"
+    }
+  },
+  "ying2018hierarchical": {
+    "bib_title": "Hierarchical Graph Representation Learning with Differentiable Pooling",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.625,
+      "doi": "10.1145/3469877.3495645",
+      "title": "Hierarchical Graph Representation Learning with Local Capsule Pooling",
+      "type": "proceedings-article",
+      "container": "ACM Multimedia Asia",
+      "publisher": "ACM",
+      "volume": null,
+      "issue": null,
+      "page": "1-7",
+      "year": 2021,
+      "event": "MMAsia '21: ACM Multimedia Asia",
+      "authors": [
+        "Zidong Su",
+        "Zehui Hu",
+        "Yangding Li"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1806.08804v4",
+      "title": "Hierarchical Graph Representation Learning with Differentiable Pooling",
+      "year": "2018",
+      "doi": "10.48550/arXiv.1806.08804v4"
+    }
+  },
+  "lee2019self": {
+    "bib_title": "Self-Attention Graph Pooling",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.571,
+      "doi": "10.3390/e24121745",
+      "title": "Graph Multihead Attention Pooling with Self-Supervised Learning",
+      "type": "journal-article",
+      "container": "Entropy",
+      "publisher": "MDPI AG",
+      "volume": "24",
+      "issue": "12",
+      "page": "1745",
+      "year": 2022,
+      "event": null,
+      "authors": [
+        "Yu Wang",
+        "Liang Hu",
+        "Yang Wu",
+        "Wanfu Gao"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1904.08082v4",
+      "title": "Self-Attention Graph Pooling",
+      "year": "2019",
+      "doi": "10.48550/arXiv.1904.08082v4"
+    }
+  },
+  "cangea2018towards": {
+    "bib_title": "Towards sparse hierarchical graph classifiers",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.3,
+      "doi": "10.1016/j.isci.2026.116173",
+      "title": "Hierarchical sparse spatiotemporal graph neural network for brain graph classification",
+      "type": "journal-article",
+      "container": "iScience",
+      "publisher": "Elsevier BV",
+      "volume": "29",
+      "issue": "6",
+      "page": "116173",
+      "year": 2026,
+      "event": null,
+      "authors": [
+        "Jiaqi Cui",
+        "Yuxin Li",
+        "Xiran Qu",
+        "Yupei Zhang"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1811.01287v1",
+      "title": "Towards Sparse Hierarchical Graph Classifiers",
+      "year": "2018",
+      "doi": "10.48550/arXiv.1811.01287v1"
+    }
+  },
+  "bianchi2020graph": {
+    "bib_title": "Graph neural networks with convolutional ARMA filters",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1109/tpami.2021.3054830",
+      "title": "Graph Neural Networks with Convolutional ARMA Filters",
+      "type": "journal-article",
+      "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": null,
+      "issue": null,
+      "page": "1-1",
+      "year": 2021,
+      "event": null,
+      "authors": [
+        "Filippo Maria Bianchi",
+        "Daniele Grattarola",
+        "Lorenzo Livi",
+        "Cesare Alippi"
+      ]
+    }
+  },
+  "he2016deep": {
+    "bib_title": "Deep Residual Learning for Image Recognition",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1109/cvpr.2016.90",
+      "title": "Deep Residual Learning for Image Recognition",
+      "type": "proceedings-article",
+      "container": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "publisher": "IEEE",
+      "volume": null,
+      "issue": null,
+      "page": "770-778",
+      "year": 2016,
+      "event": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "authors": [
+        "Kaiming He",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Sun"
+      ]
+    }
+  },
+  "xu2018representation": {
+    "bib_title": "Representation Learning on Graphs with Jumping Knowledge Networks",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.625,
+      "doi": "10.1007/s10489-021-02889-z",
+      "title": "Graph representation learning via simple jumping knowledge networks",
+      "type": "journal-article",
+      "container": "Applied Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": "52",
+      "issue": "10",
+      "page": "11324-11342",
+      "year": 2022,
+      "event": null,
+      "authors": [
+        "Fei Yang",
+        "Huyin Zhang",
+        "Shiming Tao",
+        "Sheng Hao"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1806.03536v2",
+      "title": "Representation Learning on Graphs with Jumping Knowledge Networks",
+      "year": "2018",
+      "doi": "10.48550/arXiv.1806.03536v2"
+    }
+  },
+  "rong2019dropedge": {
+    "bib_title": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.455,
+      "doi": "10.3390/sym14040798",
+      "title": "DII-GCN: Dropedge Based Deep Graph Convolutional Networks",
+      "type": "journal-article",
+      "container": "Symmetry",
+      "publisher": "MDPI AG",
+      "volume": "14",
+      "issue": "4",
+      "page": "798",
+      "year": 2022,
+      "event": null,
+      "authors": [
+        "Jinde Zhu",
+        "Guojun Mao",
+        "Chunmao Jiang"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1907.10903v4",
+      "title": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification",
+      "year": "2019",
+      "doi": "10.48550/arXiv.1907.10903v4"
+    }
+  },
+  "bresson2017residual": {
+    "bib_title": "Residual Gated Graph ConvNets",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.333,
+      "doi": "10.3390/ijms25020715",
+      "title": "SolPredictor: Predicting Solubility with Residual Gated Graph Neural Network",
+      "type": "journal-article",
+      "container": "International Journal of Molecular Sciences",
+      "publisher": "MDPI AG",
+      "volume": "25",
+      "issue": "2",
+      "page": "715",
+      "year": 2024,
+      "event": null,
+      "authors": [
+        "Waqar Ahmad",
+        "Hilal Tayara",
+        "HyunJoo Shim",
+        "Kil To Chong"
+      ]
+    },
+    "arxiv": {
+      "error": "HTTP Error 503: Service Unavailable"
+    }
+  },
+  "fey2019fast": {
+    "bib_title": "Fast Graph Representation Learning with PyTorch Geometric",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.5,
+      "doi": "10.1038/s41598-024-84483-0",
+      "title": "Graph Geometric Algebra networks for graph representation learning",
+      "type": "journal-article",
+      "container": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": "15",
+      "issue": "1",
+      "page": null,
+      "year": 2025,
+      "event": null,
+      "authors": [
+        "Jianqi Zhong",
+        "Wenming Cao"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1903.02428v3",
+      "title": "Fast Graph Representation Learning with PyTorch Geometric",
+      "year": "2019",
+      "doi": "10.48550/arXiv.1903.02428v3"
+    }
+  },
+  "keriven2020benchmark": {
+    "bib_title": "A Unified Benchmark for the Diagnosis and Treatment of Graph Neural Networks",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.364,
+      "doi": "10.1016/j.neunet.2025.108104",
+      "title": "A unified gradient regularization method for heterogeneous graph neural networks",
+      "type": "journal-article",
+      "container": "Neural Networks",
+      "publisher": "Elsevier BV",
+      "volume": "194",
+      "issue": null,
+      "page": "108104",
+      "year": 2026,
+      "event": null,
+      "authors": [
+        "Xiao Yang",
+        "Xuejiao Zhao",
+        "Zhiqi Shen"
+      ]
+    },
+    "arxiv": null
+  },
+  "kingma2014adam": {
+    "bib_title": "Adam: A Method for Stochastic Optimization",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.6,
+      "doi": "10.32614/cran.package.madgrad",
+      "title": "madgrad: 'MADGRAD' Method for Stochastic Optimization",
+      "type": "dataset",
+      "container": "CRAN: Contributed Packages",
+      "publisher": "The R Foundation",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": 2021,
+      "event": null,
+      "authors": [
+        "Daniel Falbel"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1412.6980v9",
+      "title": "Adam: A Method for Stochastic Optimization",
+      "year": "2014",
+      "doi": "10.48550/arXiv.1412.6980v9"
+    }
+  },
+  "abu2019mixhop": {
+    "bib_title": "MixHop: Higher-order graph convolutional architectures via sparsified neighborhood mixing",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.333,
+      "doi": "10.1109/access.2020.2995406",
+      "title": "Graph Convolutional Architectures via Arbitrary Order of Information Aggregation",
+      "type": "journal-article",
+      "container": "IEEE Access",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": "8",
+      "issue": null,
+      "page": "92802-92813",
+      "year": 2020,
+      "event": null,
+      "authors": [
+        "Chunpeng Zhou",
+        "Benyun Shi",
+        "Hongjun Qiu",
+        "Jiming Liu"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "1905.00067v3",
+      "title": "MixHop: Higher-Order Graph Convolutional Architectures via Sparsified Neighborhood Mixing",
+      "year": "2019",
+      "doi": "10.48550/arXiv.1905.00067v3"
+    }
+  },
+  "dwivedi2020generalization": {
+    "bib_title": "A Generalization of Transformer Networks to Graphs",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.333,
+      "doi": "10.5220/0011682100003417",
+      "title": "Self-Modularized Transformer: Learn to Modularize Networks for Systematic Generalization",
+      "type": "proceedings-article",
+      "container": "Proceedings of the 18th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+      "publisher": "SCITEPRESS - Science and Technology Publications",
+      "volume": null,
+      "issue": null,
+      "page": "599-606",
+      "year": 2023,
+      "event": "18th International Conference on Computer Vision Theory and Applications",
+      "authors": [
+        "Yuichi Kamata",
+        "Moyuru Yamada",
+        "Takayuki Okatani"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "2012.09699v2",
+      "title": "A Generalization of Transformer Networks to Graphs",
+      "year": "2020",
+      "doi": "10.48550/arXiv.2012.09699v2"
+    }
+  },
+  "li2021training": {
+    "bib_title": "Training graph neural networks with 1000 layers",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.444,
+      "doi": "10.1109/access.2024.3409429",
+      "title": "PHGNN: Pre-Training Heterogeneous Graph Neural Networks",
+      "type": "journal-article",
+      "container": "IEEE Access",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": "12",
+      "issue": null,
+      "page": "135411-135418",
+      "year": 2024,
+      "event": null,
+      "authors": [
+        "Xin Li",
+        "Hao Wei",
+        "Yu Ding"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "2106.07476v3",
+      "title": "Training Graph Neural Networks with 1000 Layers",
+      "year": "2021",
+      "doi": "10.48550/arXiv.2106.07476v3"
+    }
+  },
+  "oono2020simple": {
+    "bib_title": "Simple and Deep Graph Convolutional Networks",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.5,
+      "doi": "10.31979/etd.yca4-fmqh",
+      "title": "Deep Learning on Graphs using Graph Convolutional Networks",
+      "type": "dissertation",
+      "container": null,
+      "publisher": "San Jose State University Library",
+      "volume": null,
+      "issue": null,
+      "page": null,
+      "year": null,
+      "event": null,
+      "authors": [
+        "Saurabh Mithe"
+      ]
+    },
+    "arxiv": null
+  },
+  "topping2021understanding": {
+    "bib_title": "Understanding over-squashing and bottlenecks on graphs via curvature",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.571,
+      "doi": "10.1109/tsmc.2026.3658409",
+      "title": "Understanding Over-Squashing in Dynamic Graphs",
+      "type": "journal-article",
+      "container": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": "56",
+      "issue": "5",
+      "page": "3396-3407",
+      "year": 2026,
+      "event": null,
+      "authors": [
+        "Chaokai Wu",
+        "Xiaofeng Zhang",
+        "Jianghong Ma"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "2111.14522v3",
+      "title": "Understanding over-squashing and bottlenecks on graphs via curvature",
+      "year": "2021",
+      "doi": "10.48550/arXiv.2111.14522v3"
+    }
+  },
+  "alon2020bottleneck": {
+    "bib_title": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+    "bib_type": "inproceedings",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 0.167,
+      "doi": "10.1016/j.neunet.2025.108056",
+      "title": "Dynamic graph representation learning with disentangled information bottleneck",
+      "type": "journal-article",
+      "container": "Neural Networks",
+      "publisher": "Elsevier BV",
+      "volume": "194",
+      "issue": null,
+      "page": "108056",
+      "year": 2026,
+      "event": null,
+      "authors": [
+        "Jihong Wang",
+        "Yuxin Bai",
+        "Chunqiang Zhu",
+        "Hao Qian",
+        "Ziqi Liu",
+        "Minnan Luo"
+      ]
+    },
+    "arxiv": {
+      "score": 1.0,
+      "arxiv_id": "2006.05205v4",
+      "title": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+      "year": "2020",
+      "doi": "10.48550/arXiv.2006.05205v4"
+    }
+  },
+  "wu2020comprehensive": {
+    "bib_title": "A Comprehensive Survey on Graph Neural Networks",
+    "bib_type": "article",
+    "has_doi": false,
+    "existing_doi": null,
+    "crossref": {
+      "score": 1.0,
+      "doi": "10.1109/tnnls.2020.2978386",
+      "title": "A Comprehensive Survey on Graph Neural Networks",
+      "type": "journal-article",
+      "container": "IEEE Transactions on Neural Networks and Learning Systems",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "volume": "32",
+      "issue": "1",
+      "page": "4-24",
+      "year": 2021,
+      "event": null,
+      "authors": [
+        "Zonghan Wu",
+        "Shirui Pan",
+        "Fengwen Chen",
+        "Guodong Long",
+        "Chengqi Zhang",
+        "Philip S. Yu"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1384 @@
+{
+  "kipf2017gcn": {
+    "source": "datacite",
+    "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "authors": [
+      {
+        "given": "Thomas N.",
+        "family": "Kipf",
+        "name": "Kipf, Thomas N."
+      },
+      {
+        "given": "Max",
+        "family": "Welling",
+        "name": "Welling, Max"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2016,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Semi-Supervised Classification with Graph Convolutional Networks"
+  },
+  "gilbert1959random": {
+    "source": "crossref",
+    "title": "Random Graphs",
+    "authors": [
+      {
+        "given": "E. N.",
+        "family": "Gilbert",
+        "name": ""
+      }
+    ],
+    "container": "The Annals of Mathematical Statistics",
+    "short_container": "Ann. Math. Statist.",
+    "event": null,
+    "volume": "30",
+    "issue": "4",
+    "page": "1141-1144",
+    "article_number": null,
+    "year": 1959,
+    "type": "journal-article",
+    "publisher": "Institute of Mathematical Statistics",
+    "curated_title": "Random graphs"
+  },
+  "barabasi1999emergence": {
+    "source": "crossref",
+    "title": "Emergence of Scaling in Random Networks",
+    "authors": [
+      {
+        "given": "Albert-László",
+        "family": "Barabási",
+        "name": ""
+      },
+      {
+        "given": "Réka",
+        "family": "Albert",
+        "name": ""
+      }
+    ],
+    "container": "Science",
+    "short_container": "Science",
+    "event": null,
+    "volume": "286",
+    "issue": "5439",
+    "page": "509-512",
+    "article_number": null,
+    "year": 1999,
+    "type": "journal-article",
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "curated_title": "Emergence of scaling in random networks"
+  },
+  "holland1983stochastic": {
+    "source": "crossref",
+    "title": "Stochastic blockmodels: First steps",
+    "authors": [
+      {
+        "given": "Paul W.",
+        "family": "Holland",
+        "name": ""
+      },
+      {
+        "given": "Kathryn Blackmond",
+        "family": "Laskey",
+        "name": ""
+      },
+      {
+        "given": "Samuel",
+        "family": "Leinhardt",
+        "name": ""
+      }
+    ],
+    "container": "Social Networks",
+    "short_container": "Social Networks",
+    "event": null,
+    "volume": "5",
+    "issue": "2",
+    "page": "109-137",
+    "article_number": null,
+    "year": 1983,
+    "type": "journal-article",
+    "publisher": "Elsevier BV",
+    "curated_title": "Stochastic blockmodels: First steps"
+  },
+  "watts1998collective": {
+    "source": "crossref",
+    "title": "Collective dynamics of ‘small-world’ networks",
+    "authors": [
+      {
+        "given": "Duncan J.",
+        "family": "Watts",
+        "name": ""
+      },
+      {
+        "given": "Steven H.",
+        "family": "Strogatz",
+        "name": ""
+      }
+    ],
+    "container": "Nature",
+    "short_container": "Nature",
+    "event": null,
+    "volume": "393",
+    "issue": "6684",
+    "page": "440-442",
+    "article_number": null,
+    "year": 1998,
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "curated_title": "Collective dynamics of small-world networks"
+  },
+  "wormald1999models": {
+    "source": "crossref",
+    "title": "Models of Random Regular Graphs",
+    "authors": [
+      {
+        "given": "N. C.",
+        "family": "Wormald",
+        "name": ""
+      }
+    ],
+    "container": "Surveys in Combinatorics, 1999",
+    "short_container": null,
+    "event": null,
+    "volume": null,
+    "issue": null,
+    "page": "239-298",
+    "article_number": null,
+    "year": 1999,
+    "type": "book-chapter",
+    "publisher": "Cambridge University Press",
+    "curated_title": "Models of random regular graphs"
+  },
+  "xu2019gin": {
+    "source": "datacite",
+    "title": "How Powerful are Graph Neural Networks?",
+    "authors": [
+      {
+        "given": "Keyulu",
+        "family": "Xu",
+        "name": "Xu, Keyulu"
+      },
+      {
+        "given": "Weihua",
+        "family": "Hu",
+        "name": "Hu, Weihua"
+      },
+      {
+        "given": "Jure",
+        "family": "Leskovec",
+        "name": "Leskovec, Jure"
+      },
+      {
+        "given": "Stefanie",
+        "family": "Jegelka",
+        "name": "Jegelka, Stefanie"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2018,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "How Powerful are Graph Neural Networks"
+  },
+  "morris2020tudataset": {
+    "source": "datacite",
+    "title": "TUDataset: A collection of benchmark datasets for learning with graphs",
+    "authors": [
+      {
+        "given": "Christopher",
+        "family": "Morris",
+        "name": "Morris, Christopher"
+      },
+      {
+        "given": "Nils M.",
+        "family": "Kriege",
+        "name": "Kriege, Nils M."
+      },
+      {
+        "given": "Franka",
+        "family": "Bause",
+        "name": "Bause, Franka"
+      },
+      {
+        "given": "Kristian",
+        "family": "Kersting",
+        "name": "Kersting, Kristian"
+      },
+      {
+        "given": "Petra",
+        "family": "Mutzel",
+        "name": "Mutzel, Petra"
+      },
+      {
+        "given": "Marion",
+        "family": "Neumann",
+        "name": "Neumann, Marion"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2020,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "TUDataset: A Collection of Benchmark Datasets for Learning with Graphs"
+  },
+  "li2018deeper": {
+    "source": "crossref",
+    "title": "Deeper Insights Into Graph Convolutional Networks for Semi-Supervised Learning",
+    "authors": [
+      {
+        "given": "Qimai",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Zhichao",
+        "family": "Han",
+        "name": ""
+      },
+      {
+        "given": "Xiao-ming",
+        "family": "Wu",
+        "name": ""
+      }
+    ],
+    "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "short_container": "AAAI",
+    "event": null,
+    "volume": "32",
+    "issue": "1",
+    "page": null,
+    "article_number": null,
+    "year": 2018,
+    "type": "journal-article",
+    "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+    "curated_title": "Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning"
+  },
+  "li2019deepgcns": {
+    "source": "crossref",
+    "title": "DeepGCNs: Can GCNs Go As Deep As CNNs?",
+    "authors": [
+      {
+        "given": "Guohao",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Matthias",
+        "family": "Muller",
+        "name": ""
+      },
+      {
+        "given": "Ali",
+        "family": "Thabet",
+        "name": ""
+      },
+      {
+        "given": "Bernard",
+        "family": "Ghanem",
+        "name": ""
+      }
+    ],
+    "container": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+    "short_container": null,
+    "event": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+    "volume": null,
+    "issue": null,
+    "page": "9266-9275",
+    "article_number": null,
+    "year": 2019,
+    "type": "proceedings-article",
+    "publisher": "IEEE",
+    "curated_title": "DeepGCNs: Can GCNs Go as Deep as CNNs"
+  },
+  "gori2005new": {
+    "source": "crossref",
+    "title": "A new model for learning in graph domains",
+    "authors": [
+      {
+        "given": "M.",
+        "family": "Gori",
+        "name": ""
+      },
+      {
+        "given": "G.",
+        "family": "Monfardini",
+        "name": ""
+      },
+      {
+        "given": "F.",
+        "family": "Scarselli",
+        "name": ""
+      }
+    ],
+    "container": "Proceedings. 2005 IEEE International Joint Conference on Neural Networks, 2005.",
+    "short_container": null,
+    "event": "International Joint Conference on Neural Networks 2005",
+    "volume": "2",
+    "issue": null,
+    "page": "729-734",
+    "article_number": null,
+    "year": null,
+    "type": "proceedings-article",
+    "publisher": "IEEE",
+    "curated_title": "A new model for learning in graph domains"
+  },
+  "hamilton2017inductive": {
+    "source": "datacite",
+    "title": "Inductive Representation Learning on Large Graphs",
+    "authors": [
+      {
+        "given": "William L.",
+        "family": "Hamilton",
+        "name": "Hamilton, William L."
+      },
+      {
+        "given": "Rex",
+        "family": "Ying",
+        "name": "Ying, Rex"
+      },
+      {
+        "given": "Jure",
+        "family": "Leskovec",
+        "name": "Leskovec, Jure"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2017,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Inductive Representation Learning on Large Graphs"
+  },
+  "velivckovic2017graph": {
+    "source": "datacite",
+    "title": "Graph Attention Networks",
+    "authors": [
+      {
+        "given": "Petar",
+        "family": "Veličković",
+        "name": "Veličković, Petar"
+      },
+      {
+        "given": "Guillem",
+        "family": "Cucurull",
+        "name": "Cucurull, Guillem"
+      },
+      {
+        "given": "Arantxa",
+        "family": "Casanova",
+        "name": "Casanova, Arantxa"
+      },
+      {
+        "given": "Adriana",
+        "family": "Romero",
+        "name": "Romero, Adriana"
+      },
+      {
+        "given": "Pietro",
+        "family": "Liò",
+        "name": "Liò, Pietro"
+      },
+      {
+        "given": "Yoshua",
+        "family": "Bengio",
+        "name": "Bengio, Yoshua"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2017,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Graph Attention Networks"
+  },
+  "duvenaud2015convolutional": {
+    "source": "datacite",
+    "title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints",
+    "authors": [
+      {
+        "given": "David",
+        "family": "Duvenaud",
+        "name": "Duvenaud, David"
+      },
+      {
+        "given": "Dougal",
+        "family": "Maclaurin",
+        "name": "Maclaurin, Dougal"
+      },
+      {
+        "given": "Jorge",
+        "family": "Aguilera-Iparraguirre",
+        "name": "Aguilera-Iparraguirre, Jorge"
+      },
+      {
+        "given": "Rafael",
+        "family": "Gómez-Bombarelli",
+        "name": "Gómez-Bombarelli, Rafael"
+      },
+      {
+        "given": "Timothy",
+        "family": "Hirzel",
+        "name": "Hirzel, Timothy"
+      },
+      {
+        "given": "Alán",
+        "family": "Aspuru-Guzik",
+        "name": "Aspuru-Guzik, Alán"
+      },
+      {
+        "given": "Ryan P.",
+        "family": "Adams",
+        "name": "Adams, Ryan P."
+      }
+    ],
+    "container": "arXiv",
+    "year": 2015,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints"
+  },
+  "gilmer2017neural": {
+    "source": "datacite",
+    "title": "Neural Message Passing for Quantum Chemistry",
+    "authors": [
+      {
+        "given": "Justin",
+        "family": "Gilmer",
+        "name": "Gilmer, Justin"
+      },
+      {
+        "given": "Samuel S.",
+        "family": "Schoenholz",
+        "name": "Schoenholz, Samuel S."
+      },
+      {
+        "given": "Patrick F.",
+        "family": "Riley",
+        "name": "Riley, Patrick F."
+      },
+      {
+        "given": "Oriol",
+        "family": "Vinyals",
+        "name": "Vinyals, Oriol"
+      },
+      {
+        "given": "George E.",
+        "family": "Dahl",
+        "name": "Dahl, George E."
+      }
+    ],
+    "container": "arXiv",
+    "year": 2017,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Neural Message Passing for Quantum Chemistry"
+  },
+  "ying2018hierarchical": {
+    "source": "datacite",
+    "title": "Hierarchical Graph Representation Learning with Differentiable Pooling",
+    "authors": [
+      {
+        "given": "Rex",
+        "family": "Ying",
+        "name": "Ying, Rex"
+      },
+      {
+        "given": "Jiaxuan",
+        "family": "You",
+        "name": "You, Jiaxuan"
+      },
+      {
+        "given": "Christopher",
+        "family": "Morris",
+        "name": "Morris, Christopher"
+      },
+      {
+        "given": "Xiang",
+        "family": "Ren",
+        "name": "Ren, Xiang"
+      },
+      {
+        "given": "William L.",
+        "family": "Hamilton",
+        "name": "Hamilton, William L."
+      },
+      {
+        "given": "Jure",
+        "family": "Leskovec",
+        "name": "Leskovec, Jure"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2018,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Hierarchical Graph Representation Learning with Differentiable Pooling"
+  },
+  "lee2019self": {
+    "source": "datacite",
+    "title": "Self-Attention Graph Pooling",
+    "authors": [
+      {
+        "given": "Junhyun",
+        "family": "Lee",
+        "name": "Lee, Junhyun"
+      },
+      {
+        "given": "Inyeop",
+        "family": "Lee",
+        "name": "Lee, Inyeop"
+      },
+      {
+        "given": "Jaewoo",
+        "family": "Kang",
+        "name": "Kang, Jaewoo"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2019,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Self-Attention Graph Pooling"
+  },
+  "cangea2018towards": {
+    "source": "datacite",
+    "title": "Towards Sparse Hierarchical Graph Classifiers",
+    "authors": [
+      {
+        "given": "Cătălina",
+        "family": "Cangea",
+        "name": "Cangea, Cătălina"
+      },
+      {
+        "given": "Petar",
+        "family": "Veličković",
+        "name": "Veličković, Petar"
+      },
+      {
+        "given": "Nikola",
+        "family": "Jovanović",
+        "name": "Jovanović, Nikola"
+      },
+      {
+        "given": "Thomas",
+        "family": "Kipf",
+        "name": "Kipf, Thomas"
+      },
+      {
+        "given": "Pietro",
+        "family": "Liò",
+        "name": "Liò, Pietro"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2018,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Towards Sparse Hierarchical Graph Classifiers"
+  },
+  "bianchi2020graph": {
+    "source": "crossref",
+    "title": "Graph Neural Networks with Convolutional ARMA Filters",
+    "authors": [
+      {
+        "given": "Filippo Maria",
+        "family": "Bianchi",
+        "name": ""
+      },
+      {
+        "given": "Daniele",
+        "family": "Grattarola",
+        "name": ""
+      },
+      {
+        "given": "Lorenzo",
+        "family": "Livi",
+        "name": ""
+      },
+      {
+        "given": "Cesare",
+        "family": "Alippi",
+        "name": ""
+      }
+    ],
+    "container": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "short_container": "IEEE Trans. Pattern Anal. Mach. Intell.",
+    "event": null,
+    "volume": null,
+    "issue": null,
+    "page": "1-1",
+    "article_number": null,
+    "year": 2021,
+    "type": "journal-article",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "curated_title": "Graph Neural Networks With Convolutional ARMA Filters"
+  },
+  "he2016deep": {
+    "source": "crossref",
+    "title": "Deep Residual Learning for Image Recognition",
+    "authors": [
+      {
+        "given": "Kaiming",
+        "family": "He",
+        "name": ""
+      },
+      {
+        "given": "Xiangyu",
+        "family": "Zhang",
+        "name": ""
+      },
+      {
+        "given": "Shaoqing",
+        "family": "Ren",
+        "name": ""
+      },
+      {
+        "given": "Jian",
+        "family": "Sun",
+        "name": ""
+      }
+    ],
+    "container": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "short_container": null,
+    "event": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "volume": null,
+    "issue": null,
+    "page": "770-778",
+    "article_number": null,
+    "year": 2016,
+    "type": "proceedings-article",
+    "publisher": "IEEE",
+    "curated_title": "Deep Residual Learning for Image Recognition"
+  },
+  "xu2018representation": {
+    "source": "datacite",
+    "title": "Representation Learning on Graphs with Jumping Knowledge Networks",
+    "authors": [
+      {
+        "given": "Keyulu",
+        "family": "Xu",
+        "name": "Xu, Keyulu"
+      },
+      {
+        "given": "Chengtao",
+        "family": "Li",
+        "name": "Li, Chengtao"
+      },
+      {
+        "given": "Yonglong",
+        "family": "Tian",
+        "name": "Tian, Yonglong"
+      },
+      {
+        "given": "Tomohiro",
+        "family": "Sonobe",
+        "name": "Sonobe, Tomohiro"
+      },
+      {
+        "given": "Ken-ichi",
+        "family": "Kawarabayashi",
+        "name": "Kawarabayashi, Ken-ichi"
+      },
+      {
+        "given": "Stefanie",
+        "family": "Jegelka",
+        "name": "Jegelka, Stefanie"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2018,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Representation Learning on Graphs with Jumping Knowledge Networks"
+  },
+  "rong2019dropedge": {
+    "source": "datacite",
+    "title": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification",
+    "authors": [
+      {
+        "given": "Yu",
+        "family": "Rong",
+        "name": "Rong, Yu"
+      },
+      {
+        "given": "Wenbing",
+        "family": "Huang",
+        "name": "Huang, Wenbing"
+      },
+      {
+        "given": "Tingyang",
+        "family": "Xu",
+        "name": "Xu, Tingyang"
+      },
+      {
+        "given": "Junzhou",
+        "family": "Huang",
+        "name": "Huang, Junzhou"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2019,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "DropEdge: Towards Deep Graph Convolutional Networks on Node Classification"
+  },
+  "bresson2017residual": {
+    "source": "datacite",
+    "title": "Residual Gated Graph ConvNets",
+    "authors": [
+      {
+        "given": "Xavier",
+        "family": "Bresson",
+        "name": "Bresson, Xavier"
+      },
+      {
+        "given": "Thomas",
+        "family": "Laurent",
+        "name": "Laurent, Thomas"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2017,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Residual Gated Graph ConvNets"
+  },
+  "fey2019fast": {
+    "source": "datacite",
+    "title": "Fast Graph Representation Learning with PyTorch Geometric",
+    "authors": [
+      {
+        "given": "Matthias",
+        "family": "Fey",
+        "name": "Fey, Matthias"
+      },
+      {
+        "given": "Jan Eric",
+        "family": "Lenssen",
+        "name": "Lenssen, Jan Eric"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2019,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Fast Graph Representation Learning with PyTorch Geometric"
+  },
+  "errica2020fair": {
+    "source": "datacite",
+    "title": "A Fair Comparison of Graph Neural Networks for Graph Classification",
+    "authors": [
+      {
+        "given": "Federico",
+        "family": "Errica",
+        "name": "Errica, Federico"
+      },
+      {
+        "given": "Marco",
+        "family": "Podda",
+        "name": "Podda, Marco"
+      },
+      {
+        "given": "Davide",
+        "family": "Bacciu",
+        "name": "Bacciu, Davide"
+      },
+      {
+        "given": "Alessio",
+        "family": "Micheli",
+        "name": "Micheli, Alessio"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2019,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "A Fair Comparison of Graph Neural Networks for Graph Classification"
+  },
+  "kingma2014adam": {
+    "source": "datacite",
+    "title": "Adam: A Method for Stochastic Optimization",
+    "authors": [
+      {
+        "given": "Diederik P.",
+        "family": "Kingma",
+        "name": "Kingma, Diederik P."
+      },
+      {
+        "given": "Jimmy",
+        "family": "Ba",
+        "name": "Ba, Jimmy"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2014,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Adam: A Method for Stochastic Optimization"
+  },
+  "abu2019mixhop": {
+    "source": "datacite",
+    "title": "MixHop: Higher-Order Graph Convolutional Architectures via Sparsified Neighborhood Mixing",
+    "authors": [
+      {
+        "given": "Sami",
+        "family": "Abu-El-Haija",
+        "name": "Abu-El-Haija, Sami"
+      },
+      {
+        "given": "Bryan",
+        "family": "Perozzi",
+        "name": "Perozzi, Bryan"
+      },
+      {
+        "given": "Amol",
+        "family": "Kapoor",
+        "name": "Kapoor, Amol"
+      },
+      {
+        "given": "Nazanin",
+        "family": "Alipourfard",
+        "name": "Alipourfard, Nazanin"
+      },
+      {
+        "given": "Kristina",
+        "family": "Lerman",
+        "name": "Lerman, Kristina"
+      },
+      {
+        "given": "Hrayr",
+        "family": "Harutyunyan",
+        "name": "Harutyunyan, Hrayr"
+      },
+      {
+        "given": "Greg Ver",
+        "family": "Steeg",
+        "name": "Steeg, Greg Ver"
+      },
+      {
+        "given": "Aram",
+        "family": "Galstyan",
+        "name": "Galstyan, Aram"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2019,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "MixHop: Higher-Order Graph Convolutional Architectures via Sparsified Neighborhood Mixing"
+  },
+  "dwivedi2020generalization": {
+    "source": "datacite",
+    "title": "A Generalization of Transformer Networks to Graphs",
+    "authors": [
+      {
+        "given": "Vijay Prakash",
+        "family": "Dwivedi",
+        "name": "Dwivedi, Vijay Prakash"
+      },
+      {
+        "given": "Xavier",
+        "family": "Bresson",
+        "name": "Bresson, Xavier"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2020,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "A Generalization of Transformer Networks to Graphs"
+  },
+  "li2021training": {
+    "source": "datacite",
+    "title": "Training Graph Neural Networks with 1000 Layers",
+    "authors": [
+      {
+        "given": "Guohao",
+        "family": "Li",
+        "name": "Li, Guohao"
+      },
+      {
+        "given": "Matthias",
+        "family": "Müller",
+        "name": "Müller, Matthias"
+      },
+      {
+        "given": "Bernard",
+        "family": "Ghanem",
+        "name": "Ghanem, Bernard"
+      },
+      {
+        "given": "Vladlen",
+        "family": "Koltun",
+        "name": "Koltun, Vladlen"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2021,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Training Graph Neural Networks with 1000 Layers"
+  },
+  "oono2020simple": {
+    "source": "datacite",
+    "title": "Graph Neural Networks Exponentially Lose Expressive Power for Node Classification",
+    "authors": [
+      {
+        "given": "Kenta",
+        "family": "Oono",
+        "name": "Oono, Kenta"
+      },
+      {
+        "given": "Taiji",
+        "family": "Suzuki",
+        "name": "Suzuki, Taiji"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2019,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Graph Neural Networks Exponentially Lose Expressive Power for Node Classification"
+  },
+  "chenSimpleDeepGraph2020": {
+    "source": "datacite",
+    "title": "Simple and Deep Graph Convolutional Networks",
+    "authors": [
+      {
+        "given": "Ming",
+        "family": "Chen",
+        "name": "Chen, Ming"
+      },
+      {
+        "given": "Zhewei",
+        "family": "Wei",
+        "name": "Wei, Zhewei"
+      },
+      {
+        "given": "Zengfeng",
+        "family": "Huang",
+        "name": "Huang, Zengfeng"
+      },
+      {
+        "given": "Bolin",
+        "family": "Ding",
+        "name": "Ding, Bolin"
+      },
+      {
+        "given": "Yaliang",
+        "family": "Li",
+        "name": "Li, Yaliang"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2020,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Simple and Deep Graph Convolutional Networks"
+  },
+  "topping2021understanding": {
+    "source": "datacite",
+    "title": "Understanding over-squashing and bottlenecks on graphs via curvature",
+    "authors": [
+      {
+        "given": "Jake",
+        "family": "Topping",
+        "name": "Topping, Jake"
+      },
+      {
+        "given": "Francesco",
+        "family": "Di Giovanni",
+        "name": "Di Giovanni, Francesco"
+      },
+      {
+        "given": "Benjamin Paul",
+        "family": "Chamberlain",
+        "name": "Chamberlain, Benjamin Paul"
+      },
+      {
+        "given": "Xiaowen",
+        "family": "Dong",
+        "name": "Dong, Xiaowen"
+      },
+      {
+        "given": "Michael M.",
+        "family": "Bronstein",
+        "name": "Bronstein, Michael M."
+      }
+    ],
+    "container": "arXiv",
+    "year": 2021,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "Understanding over-squashing and bottlenecks on graphs via curvature"
+  },
+  "alon2020bottleneck": {
+    "source": "datacite",
+    "title": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+    "authors": [
+      {
+        "given": "Uri",
+        "family": "Alon",
+        "name": "Alon, Uri"
+      },
+      {
+        "given": "Eran",
+        "family": "Yahav",
+        "name": "Yahav, Eran"
+      }
+    ],
+    "container": "arXiv",
+    "year": 2020,
+    "type": "Preprint",
+    "publisher": "arXiv",
+    "curated_title": "On the Bottleneck of Graph Neural Networks and its Practical Implications"
+  },
+  "wu2020comprehensive": {
+    "source": "crossref",
+    "title": "A Comprehensive Survey on Graph Neural Networks",
+    "authors": [
+      {
+        "given": "Zonghan",
+        "family": "Wu",
+        "name": ""
+      },
+      {
+        "given": "Shirui",
+        "family": "Pan",
+        "name": ""
+      },
+      {
+        "given": "Fengwen",
+        "family": "Chen",
+        "name": ""
+      },
+      {
+        "given": "Guodong",
+        "family": "Long",
+        "name": ""
+      },
+      {
+        "given": "Chengqi",
+        "family": "Zhang",
+        "name": ""
+      },
+      {
+        "given": "Philip S.",
+        "family": "Yu",
+        "name": ""
+      }
+    ],
+    "container": "IEEE Transactions on Neural Networks and Learning Systems",
+    "short_container": "IEEE Trans. Neural Netw. Learning Syst.",
+    "event": null,
+    "volume": "32",
+    "issue": "1",
+    "page": "4-24",
+    "article_number": null,
+    "year": 2021,
+    "type": "journal-article",
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "curated_title": "A Comprehensive Survey on Graph Neural Networks"
+  },
+  "suiIdentificationPlantVacuole2023": {
+    "source": "crossref",
+    "title": "Identification of plant vacuole proteins by using graph neural network and contact maps",
+    "authors": [
+      {
+        "given": "Jianan",
+        "family": "Sui",
+        "name": ""
+      },
+      {
+        "given": "Jiazi",
+        "family": "Chen",
+        "name": ""
+      },
+      {
+        "given": "Yuehui",
+        "family": "Chen",
+        "name": ""
+      },
+      {
+        "given": "Naoki",
+        "family": "Iwamori",
+        "name": ""
+      },
+      {
+        "given": "Jin",
+        "family": "Sun",
+        "name": ""
+      }
+    ],
+    "container": "BMC Bioinformatics",
+    "short_container": "BMC Bioinformatics",
+    "event": null,
+    "volume": "24",
+    "issue": "1",
+    "page": null,
+    "article_number": "357",
+    "year": 2023,
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "curated_title": "Identification of plant vacuole proteins by using graph neural network and contact maps"
+  },
+  "baongoImprovingPlantFunctional2025": {
+    "source": "crossref",
+    "title": "Improving plant functional annotation from knowledge graphs using Graph Neural Networks",
+    "authors": [
+      {
+        "given": "Tran Gia",
+        "family": "Bao Ngo",
+        "name": ""
+      },
+      {
+        "given": "Christophe",
+        "family": "Liseron-Monfils",
+        "name": ""
+      },
+      {
+        "given": "Shreyan",
+        "family": "Das",
+        "name": ""
+      },
+      {
+        "given": "Jordan",
+        "family": "Ubbens",
+        "name": ""
+      },
+      {
+        "given": "Paula",
+        "family": "Ashe",
+        "name": ""
+      },
+      {
+        "given": "David",
+        "family": "Konkin",
+        "name": ""
+      }
+    ],
+    "container": null,
+    "short_container": null,
+    "event": null,
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "article_number": null,
+    "year": 2025,
+    "type": "posted-content",
+    "publisher": "openRxiv",
+    "curated_title": "Improving plant functional annotation from knowledge graphs using Graph Neural Networks"
+  },
+  "charulekhaUncoveringComplicatedPlant": {
+    "source": "crossref",
+    "title": "Uncovering Complicated Plant Biological Networks through the Assistance of Artificial Intelligence Tools",
+    "authors": [
+      {
+        "given": "Kamalakkannan",
+        "family": "Charulekha",
+        "name": ""
+      },
+      {
+        "given": "Agnishwar",
+        "family": "Girigoswami",
+        "name": ""
+      },
+      {
+        "given": "Koyeli",
+        "family": "Girigoswami",
+        "name": ""
+      },
+      {
+        "given": "Mani",
+        "family": "Manoj",
+        "name": ""
+      },
+      {
+        "given": "Pragya",
+        "family": "Pallavi",
+        "name": ""
+      },
+      {
+        "given": "Pemula",
+        "family": "Gowtham",
+        "name": ""
+      },
+      {
+        "given": "Asirvatham Alwin",
+        "family": "Robert",
+        "name": ""
+      },
+      {
+        "given": "Arumugam Vijaya",
+        "family": "Anand",
+        "name": ""
+      }
+    ],
+    "container": "AI in Plant Science and Precision Agriculture",
+    "short_container": null,
+    "event": null,
+    "volume": null,
+    "issue": null,
+    "page": "225-242",
+    "article_number": null,
+    "year": 2026,
+    "type": "book-chapter",
+    "publisher": "CRC Press",
+    "curated_title": "Uncovering Complicated Plant Biological Networks through the Assistance of Artificial Intelligence Tools"
+  },
+  "li2024graph": {
+    "source": "crossref",
+    "title": "Graph pooling for graph-level representation learning: a survey",
+    "authors": [
+      {
+        "given": "Zhi-Peng",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Si-Guo",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Qin-Hu",
+        "family": "Zhang",
+        "name": ""
+      },
+      {
+        "given": "Yi-Jie",
+        "family": "Pan",
+        "name": ""
+      },
+      {
+        "given": "Nai-An",
+        "family": "Xiao",
+        "name": ""
+      },
+      {
+        "given": "Jia-Yang",
+        "family": "Guo",
+        "name": ""
+      },
+      {
+        "given": "Chang-An",
+        "family": "Yuan",
+        "name": ""
+      },
+      {
+        "given": "Wen-Jian",
+        "family": "Liu",
+        "name": ""
+      },
+      {
+        "given": "De-Shuang",
+        "family": "Huang",
+        "name": ""
+      }
+    ],
+    "container": "Artificial Intelligence Review",
+    "short_container": "Artif Intell Rev",
+    "event": null,
+    "volume": "58",
+    "issue": "2",
+    "page": null,
+    "article_number": "45",
+    "year": 2024,
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "curated_title": "Graph pooling for graph-level representation learning: a survey"
+  },
+  "du2024densegnn": {
+    "source": "crossref",
+    "title": "DenseGNN: universal and scalable deeper graph neural networks for high-performance property prediction in crystals and molecules",
+    "authors": [
+      {
+        "given": "Hongwei",
+        "family": "Du",
+        "name": ""
+      },
+      {
+        "given": "Jiamin",
+        "family": "Wang",
+        "name": ""
+      },
+      {
+        "given": "Jian",
+        "family": "Hui",
+        "name": ""
+      },
+      {
+        "given": "Lanting",
+        "family": "Zhang",
+        "name": ""
+      },
+      {
+        "given": "Hong",
+        "family": "Wang",
+        "name": ""
+      }
+    ],
+    "container": "npj Computational Materials",
+    "short_container": "npj Comput Mater",
+    "event": null,
+    "volume": "10",
+    "issue": "1",
+    "page": null,
+    "article_number": "292",
+    "year": 2024,
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "curated_title": "DenseGNN: universal and scalable deeper graph neural networks for high-performance property prediction in crystals and molecules"
+  },
+  "sun2023attention": {
+    "source": "crossref",
+    "title": "Attention-based graph neural networks: a survey",
+    "authors": [
+      {
+        "given": "Chengcheng",
+        "family": "Sun",
+        "name": ""
+      },
+      {
+        "given": "Chenhao",
+        "family": "Li",
+        "name": ""
+      },
+      {
+        "given": "Xiang",
+        "family": "Lin",
+        "name": ""
+      },
+      {
+        "given": "Tianji",
+        "family": "Zheng",
+        "name": ""
+      },
+      {
+        "given": "Fanrong",
+        "family": "Meng",
+        "name": ""
+      },
+      {
+        "given": "Xiaobin",
+        "family": "Rui",
+        "name": ""
+      },
+      {
+        "given": "Zhixiao",
+        "family": "Wang",
+        "name": ""
+      }
+    ],
+    "container": "Artificial Intelligence Review",
+    "short_container": "Artif Intell Rev",
+    "event": null,
+    "volume": "56",
+    "issue": "S2",
+    "page": "2263-2310",
+    "article_number": null,
+    "year": 2023,
+    "type": "journal-article",
+    "publisher": "Springer Science and Business Media LLC",
+    "curated_title": "Attention-based graph neural networks: a survey"
+  }
+}

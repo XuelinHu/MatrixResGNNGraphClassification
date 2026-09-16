@@ -1,0 +1,66 @@
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Message Passing and Expressive Power}
+
+Modern graph learning descends from early recursive models on graph
+domains~\cite{gori2005new} and the spectral convolution of
+Kipf and Welling~\cite{kipf2017gcn}. GraphSAGE introduced inductive
+neighborhood aggregation~\cite{hamilton2017inductive}, graph attention networks
+weighted neighbors by learned attention~\cite{velivckovic2017graph}, and the
+message-passing neural network framework unified these designs for molecular
+property prediction~\cite{gilmer2017neural}. The Weisfeiler--Lehman connection
+established by GIN characterizes the discriminative power of this family and
+shows that injective multiset aggregation is central to its
+expressiveness~\cite{xu2019gin}. Surveys document the resulting design
+space~\cite{wu2020comprehensive}, and more recent attention-based
+variants extend it further~\cite{sun2023attention}.
+
+\subsection{Deep GNNs and Residual Connectivity}
+
+Depth is not free in message passing. Over-smoothing makes node
+representations converge as propagation depth grows~\cite{li2018deeper}, and
+this limiting behavior has been analyzed
+explicitly~\cite{oono2020simple,chenSimpleDeepGraph2020}. Over-squashing is the
+complementary failure mode, in which long-range information is compressed into
+fixed-size messages~\cite{alon2020bottleneck,topping2021understanding}. Several
+mechanisms target these effects: DropEdge randomly removes edges during
+training~\cite{rong2019dropedge}, Jumping Knowledge aggregates representations
+across layers~\cite{xu2018representation}, and residual or dense skip paths
+carry earlier states forward~\cite{he2016deep,li2019deepgcns,li2021training}.
+Residual gated graph convolutional networks learn how strongly historical
+states should be reinjected~\cite{bresson2017residual}, and DenseGNN stacks
+dense connections for scalable deep
+prediction~\cite{du2024densegnn}. These approaches reuse depth-wise state
+within a single stream. Our work keeps the same reuse principle but asks a
+different question: given several parallel branches, which local residual
+neighborhoods on the branch-by-layer grid should be connected.
+
+\subsection{Multi-Branch and Higher-Order Architectures}
+
+Higher-order neighborhood mixing shows that propagating over several hops with
+sparsified mixing improves over single-hop
+aggregation~\cite{abu2019mixhop}. ARMA filters supply a related frequency-domain
+view of multi-hop propagation~\cite{bianchi2020graph}, and graph transformers
+generalize attention beyond local
+neighborhoods~\cite{dwivedi2020generalization}. Hierarchical pooling adds a
+second axis of structure by coarsening graphs as they are
+processed~\cite{ying2018hierarchical,lee2019self,cangea2018towards}, and recent
+surveys catalogue the resulting
+designs~\cite{li2024graph,sun2023attention}. These lines of work increase the
+expressive or aggregational capacity of the propagation layer. In contrast, we
+hold the propagation operator fixed and vary only how hidden states are reused
+across a branch-by-layer grid, so that the residual topology itself becomes the
+identifiable factor.
+
+\subsection{Controlled Evaluation for Graph Classification}
+
+Because graph benchmarks are sensitive to splitting, feature choice, and
+operator tuning, careful comparative protocols matter. Errica \emph{et al.}
+argue for matched evaluation conditions when comparing graph
+classifiers~\cite{errica2020fair}, and TUDataset provides the standardized
+collection on which much of this evaluation
+rests~\cite{morris2020tudataset}. We follow the same discipline: the readout,
+optimizer schedule, fold partition, and backbone options are matched across the
+compared residual families, and only the residual neighborhood and
+residual-control mechanism change.

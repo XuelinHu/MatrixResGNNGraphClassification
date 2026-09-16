@@ -1,0 +1,80 @@
+\documentclass[fleqn,10pt,lineno]{wlpeerj}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{flafter}
+\usepackage{microtype}
+\usepackage{url}
+\usepackage[authoryear,round]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{graphicx}
+\usepackage{iftex}
+
+\ifPDFTeX
+\else
+  \usepackage{fontspec}
+  \setmainfont{TeX Gyre Termes}
+  \setsansfont{TeX Gyre Heros}
+  \setmonofont{Latin Modern Mono}
+\fi
+
+\let\cite\citep
+
+\graphicspath{{../../}{../../figures/}{figures/}}
+
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{2pt}
+\renewcommand{\arraystretch}{0.95}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.8}
+
+\title{Matrix-Residual Graph Neural Networks for Graph Classification}
+
+\author[1]{Xuelin Hu}
+\author[2]{Xiaoqin Fu}
+
+\affil[1]{School of Railway Communication and Signaling Engineering, Liuzhou Railway Vocational Technical College, Liuzhou 545000, China}
+\affil[2]{School of Railway Locomotive and Rolling Stock, Liuzhou Railway Vocational Technical College, Liuzhou 545000, China}
+
+\corrauthor[2]{Xiaoqin Fu}{fuxiaoqin@ltzy.edu.cn}
+
+\begin{abstract}
+\textbf{Background.} Residual connections are widely used to stabilize graph neural networks, but residual design is often treated as a one-dimensional depth-wise choice. Multi-branch graph classifiers create a richer design space: residual information can flow along depth, across branches, or through a local two-dimensional branch-by-layer neighborhood.
+
+\textbf{Methods.} We study Matrix-Residual Graph Neural Networks as a controlled residual-topology framework for graph classification. The model family represents hidden states on a branch-by-layer grid and compares five information-flow designs: plain message passing, vertical residual reuse, horizontal branch-wise exchange, local matrix residual reuse, and sparse/gated matrix reuse. The main benchmark evaluates six datasets, four message-passing operators, five model families, and five graph-level folds under a shared training protocol. We further run branch-count ablations, fold-0 sensitivity scans, five-fold checks of selected MatrixResGated candidates, and mechanism analyses. To further test effectiveness across structural granularities, we construct a controlled synthetic multi-class benchmark spanning five graph families and two to eight structural classes.
+
+\textbf{Results.} Real-data experiments show that no single residual topology is universally optimal across datasets and operators. Branch-count ablations reveal dataset-dependent operating regions rather than monotonic capacity gains. The synthetic multi-class benchmark further shows that simple baselines remain competitive on low-class tasks, whereas MatrixRes and MatrixResGated become more consistently favorable as structural class granularity increases.
+
+\textbf{Conclusions.} Residual topology, branch count, and residual filtering should be selected jointly. Additional branches help only when they create useful functional diversity; otherwise, residual traffic and branch redundancy can offset the added capacity. Matrix-style reuse is best understood as a tunable residual family rather than a universal replacement for simpler vertical or horizontal residual paths, with its clearest advantage appearing under finer-grained structural discrimination.
+\end{abstract}
+
+\begin{document}
+
+\flushbottom
+\maketitle
+\thispagestyle{empty}
+\noindent\textbf{Keywords:} Graph classification; Graph neural networks; Residual connections; Multi-branch architectures; Matrix residual reuse; Synthetic graph benchmarks
+\par\medskip
+
+\input{sections/01_introduction_peerj.tex}
+\input{sections/02_methods_peerj.tex}
+\input{sections/03_results_peerj.tex}
+\input{sections/04_discussion_peerj.tex}
+\input{sections/05_conclusions_peerj.tex}
+\input{sections/06_acknowledgments.tex}
+\input{sections/07_appendix.tex}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

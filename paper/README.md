@@ -1,6 +1,7 @@
 # Paper Directory
 
-This directory contains the current matrix-residual graph-classification manuscripts and submission artifacts.
+Manuscripts and submission artifacts for the matrix-residual graph-classification
+study.
 
 Repository identity for the paper submission:
 
@@ -14,16 +15,46 @@ Paper focus:
 - `branch x layer` matrix view
 - comparison of vertical, horizontal, and matrix-style reuse
 
-Canonical manuscript assets:
+## Versions
 
-- `main.tex`: English PeerJ manuscript source
-- `sections/`: English PeerJ manuscript sections
-- `main.pdf`: compiled English PDF
-- `main_zh.tex`: Chinese confirmation source
-- `main_zh.pdf`: compiled Chinese confirmation PDF
-- `references.bib`: bibliography used by both manuscripts
-- `submission_figures_png/`: numbered PNG figures prepared for submission
-- `submission_figures_png.zip`: archived numbered PNG package
-- `supporting_evidence_csv/`: numbered CSV tables prepared as supporting evidence
+| Folder | Description |
+| --- | --- |
+| [`ieee_version/`](ieee_version/) | **Current.** IEEE conference submission (English + Chinese), IEEEtran class, 40 references all with DOIs |
+| [`old_version/`](old_version/) | Previous PeerJ-format manuscript (English + Chinese), kept for reference |
+| [`templates/`](templates/) | IEEE conference template and the conference submission checklist |
+| [`tools/`](tools/) | Scripts and data used to verify and rebuild the bibliography |
 
-Use [`../docs/PROJECT_STATUS_AND_TIMELINE.md`](../docs/PROJECT_STATUS_AND_TIMELINE.md) as the consolidated project entry point.
+## Tools
+
+The bibliography in `ieee_version/` was rebuilt from authoritative records
+rather than copied from the earlier draft. The pipeline lives in `tools/`:
+
+| Script | Purpose |
+| --- | --- |
+| `list_cited.py` | List the bib keys actually cited by the manuscript |
+| `lookup_titles.py` | Query Crossref by title and score candidate matches |
+| `curated_dois.json` | Hand-checked mapping from citation key to intended DOI |
+| `verify_dois.py` | Resolve every DOI and confirm the returned title matches |
+| `fetch_bib_meta.py` | Fetch authoritative author/venue/pagination for each DOI |
+| `build_bib.py` | Assemble `references.bib` from the verified metadata |
+| `check_cites.py` | Report cited-but-missing and orphaned bibliography entries |
+
+Generated data: `dois_resolved.json`, `doi_verification.json`,
+`doi_metadata.json`, `references_new.bib`.
+
+## Submission checklist status
+
+Against the conference requirements in `templates/notice_text.txt`:
+
+| Requirement | Status |
+| --- | --- |
+| English manuscript, IEEE conference format | Done |
+| Minimum 4 double-column pages excluding references | Done — 12 pages total, ~9.5 body |
+| Title, authors, corresponding author, affiliation, abstract, keywords, sections, acknowledgment, references | Done |
+| All figures cited in order and readable at 100% | Done |
+| All tables cited in order and editable | Done (LaTeX source) |
+| Every reference has a DOI | Done — 40/40 |
+| At least 10 references | Done — 40 |
+| References from the last three years | Done — 6 from 2023–2026 |
+| Reference authors from 3+ countries | Done |
+| AI-assistance disclosure | Kept in Acknowledgment |
