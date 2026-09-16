@@ -2,117 +2,80 @@
 \label{sec:intro}
 
 Graph neural networks (GNNs) learn graph representations by repeatedly
-aggregating information from local neighborhoods~\cite{gori2005new,kipf2017gcn}.
+aggregating information from local neighborhoods~\cite{kipf2017gcn}.
 This message-passing view has become a standard tool for graph classification
 because it combines node attributes, local connectivity, and graph-level
 structure in a single differentiable model~\cite{gilmer2017neural,wu2020comprehensive}.
-The formulation is general enough to serve domains well beyond the standard
-benchmarks: graph classifiers are used to identify plant vacuole proteins from
-contact maps~\cite{suiIdentificationPlantVacuole2023}, to propagate functional
-annotation through plant knowledge graphs~\cite{baongoImprovingPlantFunctional2025},
-and to probe plant biological networks with AI
-tooling~\cite{charulekhaUncoveringComplicatedPlant}. In molecular and
-protein-oriented benchmarks, graph labels may depend on both local motifs and
-global organization, so useful intermediate evidence must survive until
-graph-level pooling~\cite{duvenaud2015convolutional,ying2018hierarchical}.
+Graph classifiers are used well beyond the standard benchmarks, for example to
+identify plant vacuole proteins from contact
+maps~\cite{suiIdentificationPlantVacuole2023} and to propagate functional
+annotation through plant knowledge
+graphs~\cite{baongoImprovingPlantFunctional2025}.
+In such tasks, graph labels may depend on both local motifs and global
+organization, so useful intermediate evidence must survive until graph-level
+pooling~\cite{ying2018hierarchical}.
 
-Increasing depth or adding parallel branches can expand model capacity, but it
-also changes information transport through the network. Deep GNNs may suffer
-from over-smoothing, where node representations become too similar across
-propagation steps~\cite{li2018deeper,oono2020simple}. They may also suffer from
-over-squashing, where long-range information is compressed into limited-size
-messages~\cite{alon2020bottleneck,topping2021understanding}. These issues are
-especially relevant for graph-level prediction because the final readout
-depends on the quality of the intermediate representations that reach the
-pooling stage.
+Increasing depth or adding parallel branches expands capacity but also changes
+information transport. Deep GNNs may suffer from over-smoothing, where node
+representations become too similar across propagation
+steps~\cite{li2018deeper,oono2020simple}, or from over-squashing, where
+long-range information is compressed into limited-size
+messages~\cite{alon2020bottleneck,topping2021understanding}. Both are critical
+for graph-level prediction, because the final readout depends on the
+intermediate representations that reach the pooling stage. Residual
+connections are a common response~\cite{he2016deep,bresson2017residual}, as are
+DropEdge and Jumping Knowledge
+aggregation~\cite{rong2019dropedge,xu2018representation}. Yet residual
+connectivity is usually treated as a default layer-wise component rather than
+as the object of study: most residual graph classifiers reuse information along
+depth within a single stream.
 
-Residual connections are a common response to these
-difficulties~\cite{he2016deep,bresson2017residual}. They improve gradient flow
-and allow earlier representations to be reused. Other depth-control strategies,
-including DropEdge, Jumping Knowledge aggregation, and graph-specific
-normalization, also aim to preserve useful information across propagation
-steps~\cite{rong2019dropedge,xu2018representation}. However, residual
-connectivity is still commonly treated as a default layer-wise component rather
-than as the object of study. Most residual graph classifiers reuse information
-along depth in the same stream.
-
-Once a model contains multiple branches, depth-wise residual reuse is only one
-possible route. Residual information may also move across neighboring branches
-at the same depth or through diagonal branch-depth neighborhoods. Existing
-graph-classification work has explored stronger message-passing operators,
-hierarchical pooling, attention, and higher-order neighborhood
-mixing~\cite{abu2019mixhop,bianchi2020graph,sun2023attention,li2024graph}.
-These designs improve the expressive or aggregation capacity of GNNs, but they
-do not isolate the residual-routing question: if several branch states are
-available at a given depth, should the model reuse only the previous state of
-the same branch, exchange states laterally, or combine both directions in a
-local two-dimensional residual neighborhood?
+Once a model contains multiple branches, depth-wise reuse is only one possible
+route. Residual information may also move across neighboring branches at the
+same depth, or through diagonal branch-depth neighborhoods. Prior work has
+strengthened message-passing operators, pooling, and higher-order neighborhood
+mixing~\cite{abu2019mixhop,li2024graph}, but
+these designs do not isolate the residual-routing question: given several branch
+states at a given depth, should the model reuse only the previous state of the
+same branch, exchange states laterally, or combine both in a local
+two-dimensional neighborhood?
 
 This paper studies residual reuse as a structured design problem on a
-branch-by-layer grid. The central question is not whether skip connections
-should be present, but where residual signals should flow. A grid view exposes
-three controlled neighborhoods: vertical reuse along depth, horizontal exchange
-across neighboring branches, and matrix-style reuse that combines same-branch,
-neighboring-branch, and diagonal residual paths. A sparse/gated matrix variant
-further tests whether matrix residual traffic should be filtered before
-injection.
+branch-by-layer grid. The question is not whether skip connections should exist,
+but where residual signals should flow. The grid exposes three controlled
+neighborhoods: vertical reuse along depth, horizontal exchange across branches,
+and matrix-style reuse combining same-branch, neighboring-branch, and diagonal
+paths. A sparse/gated variant tests whether matrix residual traffic should be
+filtered before injection. The study is deliberately controlled: the classifier,
+readout, fold protocol, and backbone options are held fixed, so that only the
+residual topology and its control mechanism vary. Recent models may reach
+stronger absolute performance by changing several components at
+once~\cite{du2024densegnn}; here those components are intentionally fixed so
+that residual topology remains identifiable, following the same discipline as
+fair-comparison protocols for graph
+classification~\cite{errica2020fair,morris2020tudataset}. Because real
+benchmarks span a limited range of structural class granularity, we complement
+them with controlled synthetic graph families whose labels are generated by
+structural parameters.
 
-The study is deliberately controlled. It fixes the graph-classification
-pipeline within each comparison, evaluates the same architecture family under
-several canonical message-passing operators, and changes only the residual
-topology and residual-control mechanism. This separation keeps the empirical
-comparison focused on information-flow design rather than on unrelated changes
-in readout structure, task-specific feature engineering, or operator-specific
-tuning. Recent graph models may achieve stronger absolute performance by
-changing several components simultaneously~\cite{du2024densegnn}; here, those
-components are intentionally held fixed so that the residual topology itself
-remains identifiable. The same logic motivates recent work on fair
-comparison protocols for graph
-classification~\cite{errica2020fair,morris2020tudataset}.
+The work addresses three research questions. \textbf{RQ1:} Does residual
+topology affect performance under a shared graph-classification protocol?
+\textbf{RQ2:} How do branch count, residual traffic, and mechanisms explain
+performance changes? \textbf{RQ3:} When is matrix-style residual reuse more
+effective on real data and on controlled synthetic multi-class structures?
 
-Real graph benchmarks are also limited in the range of structural class
-granularity that they expose. A residual topology may look adequate on binary
-graph classification while behaving differently when the label space requires
-finer structural separation. To test this point without adding task-specific
-feature engineering, we complement the real-data benchmark with controlled
-synthetic graph families whose class labels are generated by structural
-parameters. This synthetic setting is not intended to replace real benchmarks;
-it is a stress test for whether residual routing remains stable as structural
-classes become more fine-grained.
-
-The work is organized around three research questions:
-
-\begin{enumerate}
-\item \textbf{RQ1.} Does residual topology affect performance under a shared
-graph-classification protocol? We compare plain message passing, vertical
-residual reuse, horizontal branch-wise exchange, local matrix residual reuse,
-and sparse/gated matrix reuse while holding the remaining pipeline fixed.
-\item \textbf{RQ2.} How do branch count, residual traffic, and mechanisms
-explain performance changes? We test whether additional branches improve
-accuracy monotonically or only within a useful operating region, and we relate
-these trends to diversity, similarity, gradients, and residual traffic.
-\item \textbf{RQ3.} When is matrix-style residual reuse more effective on real
-data and on controlled synthetic multi-class structures? We test whether matrix
-residual traffic should be passed densely or filtered, whether candidate
-residual-control settings remain valid after full-fold reruns, and whether
-matrix-style reuse becomes more stable as structural class granularity
-increases.
-\end{enumerate}
-
-The main contributions are as follows.
-
+The contributions are:
 \begin{itemize}
-\item \textbf{A branch-by-layer formulation of residual graph classifiers.}
-Vertical, horizontal, matrix, and sparse/gated matrix residual families are
-expressed as local neighborhoods on the same grid, making their
-information-flow differences explicit.
-\item \textbf{A controlled real-data benchmark and a synthetic multi-class
-benchmark.} The experiments keep the classifier, readout, fold protocol, and
-backbone choices matched, and add a structural stress test spanning five
-controlled graph families and two to eight classes.
+\item \textbf{A branch-by-layer formulation.} Vertical, horizontal, matrix, and
+sparse/gated matrix residual families are expressed as local neighborhoods on
+the same grid, making their information-flow differences explicit.
+\item \textbf{A controlled real-data and synthetic benchmark.} Classifier,
+readout, fold protocol, and backbone choices are matched across all
+comparisons, and a structural stress test spans five controlled graph families
+and two to eight classes.
 \item \textbf{A mechanism analysis with conservative rerun checks.} Accuracy is
-analyzed together with branch diversity, branch cosine similarity, centered
-kernel alignment, gradient norms, and residual activity. Sensitivity scans are
-used only to identify candidates, and selected settings are rerun across folds
-before being treated as empirical evidence.
+analyzed alongside branch diversity, branch cosine similarity, centered kernel
+alignment, gradient norms, and residual activity. Sensitivity scans only
+identify candidates; selected settings are rerun across folds before being
+treated as evidence.
 \end{itemize}

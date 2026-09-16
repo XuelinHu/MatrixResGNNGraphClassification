@@ -18,36 +18,36 @@ os.chdir(ROOT)
 
 # key -> (entry type, venue field name, venue value, extra field dict)
 VENUE = {
-    "kipf2017gcn": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2017"}),
-    "xu2019gin": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2019"}),
-    "hamilton2017inductive": ("inproceedings", "booktitle", "Advances in Neural Information Processing Systems (NeurIPS)", {"volume": "30", "pages": "1024--1034", "year": "2017"}),
-    "velivckovic2017graph": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2018"}),
-    "duvenaud2015convolutional": ("inproceedings", "booktitle", "Advances in Neural Information Processing Systems (NeurIPS)", {"volume": "28", "pages": "2224--2232", "year": "2015"}),
-    "gilmer2017neural": ("inproceedings", "booktitle", "Proc. Int. Conf. Machine Learning (ICML)", {"pages": "1263--1272", "year": "2017"}),
-    "ying2018hierarchical": ("inproceedings", "booktitle", "Advances in Neural Information Processing Systems (NeurIPS)", {"volume": "31", "pages": "4800--4810", "year": "2018"}),
-    "lee2019self": ("inproceedings", "booktitle", "Proc. Int. Conf. Machine Learning (ICML)", {"pages": "3634--3643", "year": "2019"}),
-    "cangea2018towards": ("inproceedings", "booktitle", "NeurIPS Workshop on Relational Representation Learning", {"year": "2018"}),
-    "xu2018representation": ("inproceedings", "booktitle", "Proc. Int. Conf. Machine Learning (ICML)", {"pages": "5453--5462", "year": "2018"}),
-    "rong2019dropedge": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2020"}),
+    "kipf2017gcn": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2017"}),
+    "xu2019gin": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2019"}),
+    "hamilton2017inductive": ("inproceedings", "booktitle", "Proc. NeurIPS", {"volume": "30", "pages": "1024--1034", "year": "2017"}),
+    "velivckovic2017graph": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2018"}),
+    "duvenaud2015convolutional": ("inproceedings", "booktitle", "Proc. NeurIPS", {"volume": "28", "pages": "2224--2232", "year": "2015"}),
+    "gilmer2017neural": ("inproceedings", "booktitle", "Proc. ICML", {"pages": "1263--1272", "year": "2017"}),
+    "ying2018hierarchical": ("inproceedings", "booktitle", "Proc. NeurIPS", {"volume": "31", "pages": "4800--4810", "year": "2018"}),
+    "lee2019self": ("inproceedings", "booktitle", "Proc. ICML", {"pages": "3634--3643", "year": "2019"}),
+    "cangea2018towards": ("inproceedings", "booktitle", "NeurIPS Workshop Rel. Represent. Learn.", {"year": "2018"}),
+    "xu2018representation": ("inproceedings", "booktitle", "Proc. ICML", {"pages": "5453--5462", "year": "2018"}),
+    "rong2019dropedge": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2020"}),
     "bresson2017residual": ("article", "journal", "arXiv preprint arXiv:1711.07553", {"year": "2017"}),
-    "fey2019fast": ("inproceedings", "booktitle", "ICLR Workshop on Representation Learning on Graphs and Manifolds", {"year": "2019"}),
-    "kingma2014adam": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2015"}),
-    "abu2019mixhop": ("inproceedings", "booktitle", "Proc. Int. Conf. Machine Learning (ICML)", {"pages": "21--29", "year": "2019"}),
+    "fey2019fast": ("inproceedings", "booktitle", "ICLR Workshop Represent. Learn. Graphs Manifolds", {"year": "2019"}),
+    "kingma2014adam": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2015"}),
+    "abu2019mixhop": ("inproceedings", "booktitle", "Proc. ICML", {"pages": "21--29", "year": "2019"}),
     "dwivedi2020generalization": ("article", "journal", "arXiv preprint arXiv:2012.09699", {"year": "2020"}),
-    "li2021training": ("inproceedings", "booktitle", "Proc. Int. Conf. Machine Learning (ICML)", {"pages": "6403--6413", "year": "2021"}),
-    "oono2020simple": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2020"}),
-    "chenSimpleDeepGraph2020": ("inproceedings", "booktitle", "Proc. Int. Conf. Machine Learning (ICML)", {"pages": "1725--1735", "year": "2020"}),
-    "topping2021understanding": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2022"}),
-    "alon2020bottleneck": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2021"}),
-    "errica2020fair": ("inproceedings", "booktitle", "Proc. Int. Conf. Learning Representations (ICLR)", {"year": "2020"}),
-    "morris2020tudataset": ("inproceedings", "booktitle", "ICML Workshop on Graph Representation Learning and Beyond", {"year": "2020"}),
-    "bianchi2020graph": ("article", "journal", "IEEE Transactions on Pattern Analysis and Machine Intelligence", {"volume": "44", "number": "4", "pages": "2129--2140", "year": "2022"}),
+    "li2021training": ("inproceedings", "booktitle", "Proc. ICML", {"pages": "6403--6413", "year": "2021"}),
+    "oono2020simple": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2020"}),
+    "chenSimpleDeepGraph2020": ("inproceedings", "booktitle", "Proc. ICML", {"pages": "1725--1735", "year": "2020"}),
+    "topping2021understanding": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2022"}),
+    "alon2020bottleneck": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2021"}),
+    "errica2020fair": ("inproceedings", "booktitle", "Proc. ICLR", {"year": "2020"}),
+    "morris2020tudataset": ("inproceedings", "booktitle", "ICML Workshop Graph Represent. Learn. Beyond", {"year": "2020"}),
+    "bianchi2020graph": ("article", "journal", "IEEE Trans. Pattern Anal. Mach. Intell.", {"volume": "44", "number": "4", "pages": "2129--2140", "year": "2022"}),
     "baongoImprovingPlantFunctional2025": ("article", "journal", "bioRxiv", {"year": "2025"}),
     # Conference proceedings recorded by Crossref as journal-articles.
-    "gori2005new": ("inproceedings", "booktitle", "Proc. IEEE Int. Joint Conf. Neural Networks (IJCNN)", {"volume": "2", "pages": "729--734", "year": "2005"}),
-    "he2016deep": ("inproceedings", "booktitle", "Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR)", {"pages": "770--778", "year": "2016"}),
-    "li2019deepgcns": ("inproceedings", "booktitle", "Proc. IEEE/CVF Int. Conf. Computer Vision (ICCV)", {"pages": "9266--9275", "year": "2019"}),
-    "li2018deeper": ("inproceedings", "booktitle", "Proc. AAAI Conf. Artificial Intelligence", {"volume": "32", "number": "1", "pages": "3538--3545", "year": "2018"}),
+    "gori2005new": ("inproceedings", "booktitle", "Proc. IJCNN", {"volume": "2", "pages": "729--734", "year": "2005"}),
+    "he2016deep": ("inproceedings", "booktitle", "Proc. CVPR", {"pages": "770--778", "year": "2016"}),
+    "li2019deepgcns": ("inproceedings", "booktitle", "Proc. ICCV", {"pages": "9266--9275", "year": "2019"}),
+    "li2018deeper": ("inproceedings", "booktitle", "Proc. AAAI", {"volume": "32", "number": "1", "pages": "3538--3545", "year": "2018"}),
     # Edited volumes.
     "wormald1999models": ("incollection", "booktitle", "Surveys in Combinatorics, 1999", {"publisher": "Cambridge Univ. Press", "pages": "239--298", "year": "1999"}),
     "charulekhaUncoveringComplicatedPlant": ("incollection", "booktitle", "AI in Plant Science and Precision Agriculture", {"publisher": "CRC Press", "pages": "225--242", "year": "2026"}),
@@ -71,17 +71,17 @@ NUM_FIX = {
 }
 
 ORDER = [
-    "gori2005new", "kipf2017gcn", "hamilton2017inductive", "velivckovic2017graph",
-    "xu2019gin", "gilmer2017neural", "duvenaud2015convolutional", "ying2018hierarchical",
-    "lee2019self", "cangea2018towards", "wu2020comprehensive", "li2018deeper",
-    "oono2020simple", "chenSimpleDeepGraph2020", "he2016deep", "li2019deepgcns",
-    "li2021training", "xu2018representation", "rong2019dropedge", "bresson2017residual",
-    "abu2019mixhop", "bianchi2020graph", "dwivedi2020generalization", "topping2021understanding",
+    "kipf2017gcn", "hamilton2017inductive", "velivckovic2017graph",
+    "xu2019gin", "gilmer2017neural", "ying2018hierarchical",
+    "wu2020comprehensive", "li2018deeper",
+    "oono2020simple", "he2016deep",
+    "xu2018representation", "rong2019dropedge", "bresson2017residual",
+    "abu2019mixhop", "dwivedi2020generalization", "topping2021understanding",
     "alon2020bottleneck", "errica2020fair", "morris2020tudataset", "fey2019fast",
-    "kingma2014adam", "suiIdentificationPlantVacuole2023", "sun2023attention",
+    "kingma2014adam", "suiIdentificationPlantVacuole2023",
     "li2024graph", "du2024densegnn", "baongoImprovingPlantFunctional2025",
-    "charulekhaUncoveringComplicatedPlant", "gilbert1959random", "barabasi1999emergence",
-    "holland1983stochastic", "watts1998collective", "wormald1999models",
+    "gilbert1959random", "barabasi1999emergence",
+    "holland1983stochastic", "watts1998collective",
 ]
 
 # LaTeX escapes for characters that BibTeX/LaTeX would otherwise mis-typeset.
@@ -192,12 +192,14 @@ def main():
         if year:
             fields["year"] = str(year)
 
+        # The DOI alone is emitted: IEEEtran.bst would otherwise add a second
+        # "Available: https://doi.org/..." line that duplicates it and lengthens
+        # every entry. The DOI resolves to the same landing page.
         fields["doi"] = curated[key]["doi"]
-        fields["url"] = "https://doi.org/" + fields["doi"]
 
         lines.append(f"@{typ}{{{key},")
         for name in ["author", "title", "journal", "booktitle", "publisher",
-                     "volume", "number", "pages", "year", "doi", "url"]:
+                     "volume", "number", "pages", "year", "doi"]:
             if name in fields and fields[name]:
                 lines.append(f"  {name} = {{{fields[name]}}},")
         lines.append("}")

@@ -49,12 +49,13 @@ Against the conference requirements in `templates/notice_text.txt`:
 | Requirement | Status |
 | --- | --- |
 | English manuscript, IEEE conference format | Done |
-| Minimum 4 double-column pages excluding references | Done — 12 pages total, ~9.5 body |
+| Page limit — 6 pages including references | Done — 6 pages for both English and Chinese |
 | Title, authors, corresponding author, affiliation, abstract, keywords, sections, acknowledgment, references | Done |
+| Affiliation at institution level only | Done — both authors share one affiliation |
 | All figures cited in order and readable at 100% | Done |
 | All tables cited in order and editable | Done (LaTeX source) |
-| Every reference has a DOI | Done — 40/40 |
-| At least 10 references | Done — 40 |
-| References from the last three years | Done — 6 from 2023–2026 |
+| Every reference has a DOI | Done — 29/29 |
+| At least 10 references | Done — 29 |
+| References from the last three years | Done — 4 from 2023–2025 |
 | Reference authors from 3+ countries | Done |
 | AI-assistance disclosure | Kept in Acknowledgment |

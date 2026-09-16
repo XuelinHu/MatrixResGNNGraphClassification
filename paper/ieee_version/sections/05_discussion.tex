@@ -1,179 +1,91 @@
 \section{Discussion}
 \label{sec:discussion}
 
-This section answers the research questions in light of the six-dataset,
-four-operator benchmark, the branch-count ablation, the tuned-candidate checks,
-the mechanism evidence, and the synthetic multi-class scaling benchmark.
-
-\subsection{RQ1: Does Residual Topology Affect Performance?}
+\subsection{RQ1: Residual Topology and Performance}
 \label{sec:rq1}
 
-The main benchmark argues against a universal residual topology. Across 24
-dataset--operator combinations, MatrixRes is the most frequent winner and has
-the best mean rank, but all five model families win at least two combinations.
-Under GCNConv alone, Plain is strongest on PROTEINS, HorizontalRes is strongest
-on DD, MatrixResGated is strongest on ENZYMES, and MatrixRes is strongest on
-MUTAG, AIDS, and Mutagenicity. These outcomes indicate that the useful residual
-neighborhood depends on dataset-specific tolerance for branch specialization,
-residual traffic, and optimization complexity.
-
-This conclusion is consistent with the broader GNN literature: changing the
-propagation operator, normalization, or pooling design often shifts the
-preferred
-architecture~\cite{xu2019gin,hamilton2017inductive,velivckovic2017graph,ying2018hierarchical}.
-The present study adds that residual topology itself is another source of this
-shift. Matrix-style reuse can be read as a local residual stencil over the
+The main benchmark argues against a universal residual topology: MatrixRes is
+the most frequent winner with the best mean rank, but all five model families
+win at least two of the 24 dataset--operator combinations, and the GCNConv slice
+also has dataset-dependent winners. The useful residual neighborhood therefore
+depends on dataset-specific tolerance for branch specialization, residual
+traffic, and optimization complexity. This is consistent with the broader
+literature, where changing the propagation operator, normalization, or pooling
+design shifts the preferred
+architecture~\cite{xu2019gin,hamilton2017inductive,ying2018hierarchical}. The
+present study adds residual topology itself as another source of that shift.
+Matrix-style reuse can be read as a local residual stencil over the
 branch-by-layer grid, analogous in spirit to structured neighborhood
-mixing~\cite{abu2019mixhop}, but applied to hidden-state reuse rather than to
-graph adjacency. Its advantage is therefore architectural organization, not a
-new message-passing primitive.
+mixing~\cite{abu2019mixhop} but applied to hidden-state reuse rather than graph
+adjacency; its advantage is architectural organization, not a new
+message-passing primitive.
 
-\textbf{Answer.} MatrixRes is the most frequent winner in the current full
-benchmark, but residual topology is still dataset- and operator-dependent. A
-graph-classification benchmark should compare vertical, horizontal, matrix-style,
-and sparse/gated reuse rather than assuming that one residual direction is
-universally best.
-
-\subsection{RQ2: How Do Branch Count and Mechanisms Explain Performance?}
+\subsection{RQ2: Branch Count and Mechanisms}
 \label{sec:rq2}
 
-The branch-count ablation shows that \(B\) is not only a capacity parameter.
-Increasing \(B\) adds branches, residual paths, and optimization interactions.
-In the GCNConv ablation, PROTEINS has a moderate useful region: HorizontalRes
-peaks at \(B=4\), MatrixRes at \(B=6\), and MatrixResGated at \(B=3\). DD
-prefers smaller budgets, with peaks at \(B=1\) or \(B=2\). The mechanism
-summaries are consistent with this split. On PROTEINS, MatrixRes with \(B=6\)
-produces the largest branch diversity, whereas HorizontalRes keeps lower branch
-cosine and a smaller residual footprint. On DD, all best branch-count settings
-have nearly saturated branch cosine and CKA, so extra residual traffic is less
-likely to create new useful functions. Branch diversity may increase with
-\(B\), but if branch similarity remains high or gradients weaken, the extra
-branches do not translate into better classification.
+Increasing \(B\) adds branches, residual paths, and optimization interactions at
+once, so it is not a simple capacity knob. PROTEINS tolerates a moderate budget
+(peaks at \(B=4\)--\(6\)) whereas DD prefers \(B=1\)--\(2\). The mechanism
+metrics are consistent with this split: on PROTEINS the best settings combine
+increased branch diversity with reduced branch cosine, while on DD the best
+settings have nearly saturated cosine and CKA, so additional residual traffic is
+unlikely to create new functions. Diversity may rise with \(B\) but does not by
+itself improve classification when branch similarity stays high or gradients
+weaken. This rise-then-fall behaviour is a practical warning for residual GNN
+design, since residual connections are often introduced to make deeper or wider
+models easier to optimize~\cite{he2016deep}. The balance between
+functional diversity and residual interference differs sharply between two
+datasets that are both routinely treated as protein-structure benchmarks.
 
-This rise-then-fall behavior is also a practical warning for residual GNN
-design. Residual connections are often introduced to make deeper or wider
-models easier to
-optimize~\cite{he2016deep,li2019deepgcns,li2021training}, but a multi-branch
-residual model changes both capacity and routing density. A larger \(B\)
-increases the number of paths through which hidden states can be reinjected, so
-the useful regime is governed by the balance between functional diversity and
-residual interference. The branch-count results suggest that this balance
-differs sharply between PROTEINS and DD, even though both are commonly treated
-as protein-structure graph benchmarks.
-
-\textbf{Answer.} In the PROTEINS/DD GCNConv ablation, branch count helps only
-within a limited operating region. Larger branch budgets are useful when they
-create functional diversity, and less useful when residual complexity grows
-faster than branch separation or optimization quality.
-
-\subsection{RQ3: When Is Matrix-Style Residual Reuse More Effective?}
+\subsection{RQ3: When Matrix-Style Reuse Helps}
 \label{sec:rq3}
 
-MatrixResGated tests whether matrix residual traffic should be filtered before
-injection. The main benchmark shows that sparse/gated reuse is not uniformly
-better than dense matrix reuse: MatrixRes wins more dataset--operator
-combinations overall. However, MatrixResGated is still useful because it wins
-several combinations and provides a controlled way to reduce weak residual
-coefficients. The ENZYMES GCNConv win is reported but should be interpreted
-cautiously because all compared models have low absolute accuracy on that
-dataset. The mechanism table supports the residual-control interpretation: the
-gated variant generally keeps fewer active residual pathways than dense
-MatrixRes, while the learned gate remains in a moderate range rather than
-collapsing to zero. This distinction is important. The value of MatrixResGated
-is not that sparsity always improves accuracy, but that sparse residual control
-can be beneficial when matrix-style reuse would otherwise inject too much
-low-value residual traffic.
+Sparse/gated reuse is not uniformly better than dense matrix reuse: MatrixRes
+wins more combinations overall. MatrixResGated remains useful as a controlled
+way to suppress weak residual coefficients, and the mechanism table confirms
+that it keeps fewer active pathways than dense MatrixRes while the gate stays at
+a moderate value. Its value is not that sparsity always improves accuracy, but
+that filtering helps when matrix reuse would otherwise inject too much
+low-value traffic. This places it between two familiar ideas: like residual
+gated graph networks it learns how strongly historical information should be
+injected~\cite{bresson2017residual}, and like sparsification methods it reduces
+the influence of weak pathways~\cite{rong2019dropedge}. The implementation is
+deliberately simple---a scalar gate and soft-shrink filtering rather than a
+large routing network---which keeps the ablation interpretable. Candidate
+settings must still be validated across folds: the DD hidden-dimension candidate
+survives that check and yields a smaller, more efficient model, whereas the
+PROTEINS sparsity candidate does not and should not be claimed as a gain.
 
-This places sparse/gated residual reuse between two familiar design ideas. Like
-residual gated graph networks, it learns how strongly historical information
-should be injected~\cite{bresson2017residual}; like sparsification and
-regularization methods, it reduces the influence of weak or noisy
-pathways~\cite{rong2019dropedge,cangea2018towards}. The present implementation
-is deliberately simple: it uses a scalar gate and soft-shrink filtering rather
-than a large routing network. This keeps the ablation interpretable and prevents
-the gated variant from becoming a separate high-capacity model.
-
-MatrixResGated defines a tunable family rather than a plug-and-play winner. The
-fold-0 sensitivity scan suggests candidate operating regions: PROTEINS has a
-mild-sparsity candidate, while DD has conservative candidates based on smaller
-hidden dimension and lower initial gate. The five-fold candidate reruns refine
-this interpretation. On DD, the smaller hidden dimension remains beneficial and
-parameter-efficient. On PROTEINS, the mild-sparsity candidate does not preserve
-its fold-0 advantage across all folds.
-
-\textbf{Real-data evidence.} Sparse/gated matrix reuse is a control mechanism for
-residual traffic. It is complementary to dense MatrixRes rather than a strict
-replacement, and candidate settings must be validated across folds before they
-are treated as performance claims. The current evidence supports a smaller
-controlled matrix model on DD and leaves PROTEINS sparsification as an unstable
-candidate rather than a confirmed gain.
-
-The synthetic multi-class benchmark separates class granularity from
-real-dataset idiosyncrasies. In the two- and three-class settings, simpler
-residual choices remain competitive: Plain is best at \(C=2\), and
-HorizontalRes is best at \(C=3\). This result is important because it prevents
-an overbroad claim that matrix-style reuse is always needed. When the class
-count increases, the pattern changes. In the \(C=4,\ldots,8\) regime,
-MatrixResGated has the best average accuracy and normalized accuracy, while
-MatrixRes has the best macro-F1. MatrixRes also has the smallest accuracy drop
-from \(C=2\) to \(C=8\), suggesting that dense local matrix reuse is relatively
-stable as the label space becomes finer.
-
-Synthetic results at the distribution level refine this conclusion. MatrixRes is
-strongest in the higher-class BA, ER, and regular-degree control settings, where
-class labels are tied to degree growth, edge probability, or degree-uniform
-structural changes. These families share a common pattern: the label space is
-formed by related structural regimes rather than by unrelated categories, so
-local matrix residual reuse can combine depth-wise refinement with
-neighboring-branch exchange. SBM is community-driven and less favorable to
-matrix-style reuse, but MatrixRes remains close to the best result. Therefore,
-the synthetic benchmark supports a conditional claim: matrix-style residual
-reuse is most useful when the task requires separating several related
-structural regimes, while its advantage remains distribution-dependent.
-
-\textbf{Answer.} Taken together, the real-data and synthetic scaling experiments
-support MatrixRes and MatrixResGated as conditionally effective rather than
-universal residual families. Sparse/gated reuse is useful for controlling
-excessive residual traffic, while matrix-style reuse becomes more favorable
-under finer structural discrimination, especially from four to eight classes.
-The effect is strongest on several controlled degree- and density-driven graph
-families, but it remains distribution-dependent.
+The synthetic benchmark separates class granularity from real-dataset
+idiosyncrasies. Simple residual choices remain competitive at two and three
+classes, which guards against the overbroad claim that matrix-style reuse is
+always needed. From four classes onward the pattern reverses: MatrixResGated has
+the best average and normalized accuracy, MatrixRes has the best macro-F1 and
+the smallest degradation from \(C=2\) to \(C=8\). Distribution-level results
+refine this: MatrixRes leads in the degree- and density-driven BA, ER, and
+regular-degree families, whose labels separate related structural regimes rather
+than unrelated categories, while community-driven SBM is less favourable. Taken
+together, matrix-style reuse is conditionally effective rather than universal,
+and is most useful when the task requires separating several related structural
+regimes under finer discrimination.
 
 \subsection{Limitations}
 \label{sec:limitations}
 
-Several limitations bound the generality of these findings. First, although the
-main benchmark includes four message-passing operators, it still uses a fixed
-graph-level pooling and classification head; alternative readout designs may
-interact with residual topology. Second, the compared operators are canonical
-message-passing backbones rather than recent graph transformer or local-global
-hybrid architectures~\cite{dwivedi2020generalization}. This is a deliberate
-control choice, but it means the paper should not be read as a state-of-the-art
-model comparison. Third, the sensitivity scan is fold-0 only; although selected
-candidates were rerun across five folds, that follow-up is limited to
-MatrixResGated on PROTEINS and DD. Fourth, ENZYMES has low absolute accuracy and
-high variability, so its result should be interpreted cautiously. Finally, the
-mechanism analysis is correlational. Branch diversity, cosine similarity, CKA,
-and gradient norms support a coherent explanation, but they do not prove
-causality.
-
-Another limitation is that the benchmark intentionally avoids task-specific
-chemical or biological feature engineering. This makes the residual-topology
-comparison cleaner, but it also means that the absolute accuracies should not be
-interpreted as optimized state-of-the-art molecular prediction results. The
-synthetic benchmark has a related limitation: its labels are generated from
-controlled structural parameters, so it is useful for stress testing residual
-topology but cannot substitute for broader real multi-class graph benchmarks.
-The paper's contribution is methodological: it identifies when different
-residual pathways are helpful under matched conditions.
-
-\subsection{Future Directions}
-\label{sec:future}
-
-Future work should extend the comparison to larger graph-classification
-datasets, richer readout mechanisms, recent local-global backbones, and adaptive
-residual-neighborhood selection. A natural next step is to replace manually
-chosen vertical, horizontal, or matrix stencils with a learned local residual
-policy. The tuned-candidate validation should also be broadened beyond the
-current MatrixResGated checks to determine whether dataset-specific residual
-control can be selected reliably.
+Several factors bound these findings. The benchmark uses a fixed graph-level
+pooling and classification head, so alternative readouts may interact with
+residual topology. The compared operators are canonical message-passing
+backbones rather than recent graph transformers or local-global
+hybrids~\cite{dwivedi2020generalization}, which is a deliberate control choice
+but means the study is not a state-of-the-art comparison. The sensitivity scan is fold-0 only, and the candidate reruns cover
+MatrixResGated on PROTEINS and DD alone. ENZYMES has low absolute accuracy and
+high variability. The mechanism analysis is correlational: branch diversity,
+cosine similarity, CKA, and gradient norms support a coherent explanation but do
+not prove causality. Finally, the benchmark intentionally avoids task-specific
+chemical or biological feature engineering, so absolute accuracies should not be
+read as optimized state-of-the-art molecular prediction results, and the
+synthetic families stress-test residual topology rather than substitute for
+broader real multi-class benchmarks. Future work should extend the comparison to
+larger datasets, richer readouts, recent local-global backbones, and learned
+residual-neighborhood policies that replace the hand-specified vertical,
+horizontal, and matrix stencils.

@@ -1,6 +1,7 @@
 %=====================================================================
 %  Matrix-Residual Graph Neural Networks for Graph Classification
 %  IEEE conference manuscript (IEEEtran, conference option)
+%  Target length: 6 pages including references.
 %=====================================================================
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
@@ -11,18 +12,17 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{booktabs}
-\usepackage{multirow}
 \usepackage{array}
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
 
 % Tighter float spacing keeps the two-column layout compact.
-\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
-\setlength{\floatsep}{8pt plus 2pt minus 2pt}
-\setlength{\intextsep}{8pt plus 2pt minus 2pt}
-\setlength{\abovecaptionskip}{4pt}
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{3pt}
 \setlength{\belowcaptionskip}{2pt}
-\renewcommand{\arraystretch}{0.95}
+\renewcommand{\arraystretch}{0.92}
 
 % Figures live in two trees: the architecture diagram at the repository root
 % and the experiment plots under figures/exp/.
@@ -33,17 +33,11 @@
 \title{Matrix-Residual Graph Neural Networks\\ for Graph Classification}
 
 \author{
-\IEEEauthorblockN{Xuelin Hu}
-\IEEEauthorblockA{\textit{School of Railway Communication and Signaling Engineering}\\
-\textit{Liuzhou Railway Vocational Technical College}\\
+\IEEEauthorblockN{Xuelin Hu and Xiaoqin Fu\textsuperscript{*}}
+\IEEEauthorblockA{\textit{Liuzhou Railway Vocational Technical College}\\
 Liuzhou 545000, China\\
-huxuelin@ltzy.edu.cn}
-\and
-\IEEEauthorblockN{Xiaoqin Fu}
-\IEEEauthorblockA{\textit{School of Railway Locomotive and Rolling Stock}\\
-\textit{Liuzhou Railway Vocational Technical College}\\
-Liuzhou 545000, China\\
-fuxiaoqin@ltzy.edu.cn}
+huxuelin@ltzy.edu.cn, fuxiaoqin@ltzy.edu.cn\\
+\textsuperscript{*}Corresponding author}
 }
 
 \maketitle
@@ -59,28 +53,23 @@ framework for graph classification. The model family represents hidden states
 on a branch-by-layer grid and compares five information-flow designs: plain
 message passing, vertical residual reuse, horizontal branch-wise exchange,
 local matrix residual reuse, and sparse or gated matrix reuse. The main
-benchmark evaluates six datasets, four message-passing operators, five model
-families, and five graph-level folds under a shared training protocol. We
-further report branch-count ablations, fold-zero sensitivity scans, five-fold
-checks of selected gated candidates, and a mechanism analysis of branch
-diversity, similarity, gradient norm, and residual traffic. To test behavior
-across structural granularities we also construct a controlled synthetic
-benchmark spanning five graph families and two to eight structural classes.
-Experiments show that no single residual topology is universally optimal
-across datasets and operators. Branch-count ablations reveal
-dataset-dependent operating regions rather than monotonic capacity gains. The
-synthetic benchmark shows that simple baselines remain competitive on
-low-class tasks, whereas matrix residual reuse becomes consistently more
-favorable as structural class granularity increases. These results indicate
-that residual topology, branch count, and residual filtering should be
-selected jointly, and that matrix-style reuse is best understood as a tunable
-residual family rather than a universal replacement for simpler vertical or
-horizontal residual paths.
+benchmark evaluates six datasets, four message-passing operators, and five
+graph-level folds under a shared training protocol, alongside branch-count
+ablations, a mechanism analysis, and a controlled synthetic benchmark spanning
+five graph families and two to eight classes. No single residual topology is
+universally optimal across datasets and operators, and branch-count ablations
+reveal dataset-dependent operating regions rather than monotonic capacity
+gains. The synthetic benchmark shows that simple baselines remain competitive
+on low-class tasks, whereas matrix residual reuse becomes consistently more
+favorable as structural class granularity increases. Residual topology, branch
+count, and residual filtering should therefore be selected jointly;
+matrix-style reuse is best understood as a tunable residual family rather than
+a universal replacement for simpler vertical or horizontal residual paths.
 \end{abstract}
 
 \begin{IEEEkeywords}
 graph classification, graph neural networks, residual connections,
-multi-branch architectures, matrix residual reuse, synthetic graph benchmarks
+multi-branch architectures, matrix residual reuse
 \end{IEEEkeywords}
 
 \input{sections/01_introduction}
