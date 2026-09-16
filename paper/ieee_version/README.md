@@ -39,21 +39,23 @@ The three research questions are stated in Section I and answered in Section V.
 
 ## Authors and funding
 
-| Author | Email | Role |
-| --- | --- | --- |
-| Jingchao Wang | static@zut.edu.cn | |
-| Xiaodan Cui | cuixiaodan2026@163.com | Corresponding author |
-| Fangfang Shan | 6129@zut.edu.cn | |
+| # | Author | Email | Role |
+| --- | --- | --- | --- |
+| 1 | Jingchao Wang | static@zut.edu.cn | |
+| 2 | Xiaodan Cui | cuixiaodan2026@163.com | Corresponding author |
+| 3 | Pengming Hu | hupengming@zut.edu.cn | |
 
 All three share one affiliation:
 
 > School of Computer Science, Zhongyuan University of Technology,
-> Zhengzhou 450000, China
+> Zhengzhou 450007, China
 
 Funding is declared in the first-page footnote, as the IEEE template expects:
 
 > This work was supported by the Science and Technology Research Project of
-> Henan Province under Grant No. 262102211055.
+> Henan Province under Grant No. 262102211055, and by the Key Scientific
+> Research Project of Colleges and Universities in Henan Province under Grant
+> No. 27AQ520018.
 
 In the Chinese companion the author names are kept in their pinyin form,
 because only the pinyin was supplied; replace them with the Chinese characters

@@ -51,7 +51,7 @@ Against the conference requirements in `templates/notice_text.txt`:
 | English manuscript, IEEE conference format | Done |
 | Page limit — 6 pages including references | Done — 6 pages for both English and Chinese |
 | Title, authors, corresponding author, affiliation, abstract, keywords, sections, acknowledgment, references | Done — 3 authors, Xiaodan Cui corresponding |
-| Funding acknowledgment | Done — first-page footnote, Grant No. 262102211055 |
+| Funding acknowledgment | Done — first-page footnote, Grants 262102211055 and 27AQ520018 |
 | All figures cited in order and readable at 100% | Done |
 | All tables cited in order and editable | Done (LaTeX source) |
 | Every reference has a DOI | Done — 29/29 |
